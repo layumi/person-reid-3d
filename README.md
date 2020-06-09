@@ -13,6 +13,7 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Per
 - Python 3.6
 - GPU Memory >= 4G (e.g., GTX1080)
 - Pytorch = 1.4.0 (Not Latest. Latest version is incompatible, since it changes the C++ interfaces.)
+- dgl 
 
 ## Install 
 Here I use the cuda10.1 by default.
@@ -20,7 +21,8 @@ Here I use the cuda10.1 by default.
 conda create --name OG python=3.7
 conda activate OG
 conda install pytorch=1.4.0 torchvision=0.5.0 cudatoolkit=10.1 -c pytorch
-pip install dgl-cu101 
+conda install yaml
+pip install dgl-cu101
 pip install -r requirements.txt
 ```
 
