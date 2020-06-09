@@ -23,6 +23,10 @@ pip install -r requirements.txt
 ```
 
 ## Prepare Data 
+Download Market-1501, DukeMTMC-reID or MSMT17
+
+Generate the 3D data via the code at https://github.com/layumi/hmr 
+(I modified the code from https://github.com/akanazawa/hmr)
 
 ## Training 
 - Market-1501
