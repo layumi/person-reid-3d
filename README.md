@@ -85,7 +85,7 @@ python test_M.py  --name  ALL_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_a
 
 - DukeMTMC-reID
 ```bash 
-python test_M.py  --name  ALL_Duke_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB  --data 2DDuke
+python test_M.py  --data 2DDuke --name  ALL_Duke_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB
 ```
 
 - MSMT-17
