@@ -10,7 +10,7 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Per
 **I will check and upload the code in this week. **
 
 ## Prerequisites
-- Python 3.6
+- Python 3.6 or 3.7
 - GPU Memory >= 4G (e.g., GTX1080)
 - Pytorch = 1.4.0 (Not Latest. Latest version is incompatible, since it changes the C++ interfaces.)
 - dgl 
