@@ -25,10 +25,57 @@ pip install -r requirements.txt
 ## Prepare Data 
 
 ## Training 
+- Market-1501
+
+**OG-Net**
+```bash
+python train_M.py --batch-size 8 --name ALL_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all
+```
+**OG-Net-Small**
+```bash
+python train_M.py --batch-size 8 --name ALL_SDense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all     --feature_dims 48,96,192,384
+```
+
+- DukeMTMC-reID
+
+**OG-Net**
+```bash
+python train_M.py --batch-size 8 --name ALL_Duke_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --dataset-path 2DDuke  --train_all
+```
+**OG-Net-Small**
+```bash
+python train_M.py --batch-size 8 --name ALL_Duke_SDense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all    --feature_dims 48,96,192,384 --dataset-path 2DDuke
+```
+
+- MSMT-17
+
+**OG-Net**
+```bash
+python train_M.py --batch-size 8 --name MSMT_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --dataset-path 2DMSMT
+```
+**OG-Net-Small**
+```bash
+python train_M.py --batch-size 8 --name ALL_MSMT_SDense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d5+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.5   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --dataset-path 2DMSMT  --train_all  --feature_dims 48,96,192,384
+```
 
 ## Evaluation
+- Market-1501
+```bash 
+python test_M.py  --name  ALL_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB
+```
+
+- DukeMTMC-reID
+```bash 
+python test_M.py  --name  ALL_Duke_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB  --data 2DDuke
+```
+
+- MSMT-17
+```bash 
+python test_MSMT.py  --name MSMT_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB
+```
 
 ## Pre-trained Models
+Since OG-Net is really small, I will upload them in this github repo directly. 
 
 ## Results
 ### [Image Classification on Market-1501]
