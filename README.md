@@ -18,6 +18,7 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Per
 ```setup
 conda create --name OG python=3.7
 conda activate OG
+conda install pytorch=1.4.0 torchvision=0.5.0 cudatoolkit=10.2 -c pytorch
 pip install -r requirements.txt
 ```
 
