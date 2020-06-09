@@ -106,3 +106,21 @@ Since OG-Net is really small, I has included trained models in this github repo 
 ### [ModelNet Performance] 
 I add OG-Net code to https://github.com/layumi/dgcnn  
 Results on ModelNet are 92.02 Top1 Accuracy / 88.84 MeanClass Top1 Accuracy.
+
+
+## Citation
+You may cite it in your paper. Thanks a lot.
+```bibtex
+@article{zheng2020person,
+  title={Person Re-identification in the 3D Space},
+  author={Zhedong Zheng, Yi Yang},
+  journal={arXiv 2006.04569},
+  year={2020}
+}
+```
+
+## Related Work
+We thank the great works of DGL, DGCNN and PointNet++. You may check their code at
+- https://github.com/dmlc/dgl/tree/master/examples/pytorch/pointcloud
+- https://github.com/WangYueFt/dgcnn
+- https://github.com/erikwijmans/Pointnet2_PyTorch
