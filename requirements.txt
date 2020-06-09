@@ -1,5 +1,6 @@
 # python requirements
 open3d
 tqdm
+pyyaml
 
 ./pointnet2_ops_lib/.
