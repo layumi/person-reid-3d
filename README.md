@@ -7,8 +7,6 @@
 
 Thanks for your attention. In this repo, we provide the code for the paper [[Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
 
-**I will check and upload the code in this week. **
-
 ## Prerequisites
 - Python 3.6 or 3.7
 - GPU Memory >= 4G (e.g., GTX1080)
