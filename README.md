@@ -6,7 +6,8 @@
 ![](https://github.com/layumi/person-reid-3d/blob/master/imgs/demo-1.jpg)
 
 Thanks for your attention. In this repo, we provide the code for the paper [[Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
-I will check and upload the code in this week. 
+
+**I will check and upload the code in this week. **
 
 ### Prerequisites
 - Python 3.6
