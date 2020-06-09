@@ -26,21 +26,24 @@ pip install -r requirements.txt
 ```
 
 ## Prepare Data 
-Download Market-1501, DukeMTMC-reID or MSMT17 and unzip them in the '../'
+Download Market-1501, DukeMTMC-reID or MSMT17 and unzip them in the `../`
 
 Split the dataset and arrange them in the folder of ID.
 ```bash 
 python prepare_market.py
+python prepare_duke.py
+python prepare_MSMT.py
 ```
 
 Link the 2DDataset 
 ```bash 
 ln -s ../Market/pytorch  ./2DMarket
+ln -s ../Duke/pytorch  ./2DDuke
+ln -s ../MSMT/pytorch  ./2DMSMT
 ```
 
 Generate the 3D data via the code at https://github.com/layumi/hmr 
 (I modified the code from https://github.com/akanazawa/hmr)
-
 
 ## Training 
 - Market-1501
