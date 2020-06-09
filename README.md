@@ -96,7 +96,7 @@ python test_MSMT.py  --name MSMT_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+b
 ```
 
 ## Pre-trained Models
-Since OG-Net is really small, I will upload them in this github repo directly. 
+Since OG-Net is really small, I has included trained models in this github repo `./snapshot`. 
 
 ## Results
 ### [Person Re-ID Performance]
