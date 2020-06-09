@@ -1,2 +1,4 @@
 # python requirements
 open3d
+
+./pointnet2_ops_lib/.
