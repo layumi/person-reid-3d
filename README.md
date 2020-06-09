@@ -1,4 +1,4 @@
-<h1 align="center"> Person Re-id in the 3D Space</h1>
+# Person Re-id in the 3D Space
 
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -9,18 +9,26 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Per
 
 **I will check and upload the code in this week. **
 
-### Prerequisites
+## Prerequisites
 - Python 3.6
 - GPU Memory >= 4G (e.g., GTX1080)
 - Pytorch = 1.13.0 or 1.12.0 or 1.11.0 (Not Latest. Latest version is incompatible, since it changes the C++ interfaces.)
 
-### Install
+## Install
 
-### Prepare Data 
 
-### Training 
+## Prepare Data 
 
-### Testing
+## Training 
 
-### Related Works
-We also would like to thank great works as follows:
+## Evaluation
+
+## Pre-trained Models
+
+## Results
+### [Image Classification on Market-1501]
+| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
+| ------------------ |---------------- | -------------- |
+| My model   |     85%         |      95%       |
+
+
