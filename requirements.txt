@@ -1,4 +1,5 @@
 # python requirements
 open3d
+tqdm
 
 ./pointnet2_ops_lib/.
