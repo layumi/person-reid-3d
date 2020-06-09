@@ -99,9 +99,11 @@ python test_MSMT.py  --name MSMT_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+b
 Since OG-Net is really small, I will upload them in this github repo directly. 
 
 ## Results
-### [Image Classification on Market-1501]
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My model   |     85%         |      95%       |
+### [Person Re-ID Performance]
+| Model name         | Market  | Duke | MSMT|
+| ------------------ |---------------- | -------------- | -------------- |
+| OG-Net-Small |  80.85(59.56) |  70.11(49.93)     |   34.87(14.57)   | 
+| OG-Net   |    80.94(59.97)  |   71.77(50.81) |  36.37(15.74)    |
 
-
+### [ModelNet Performance] 
+I add OG-Net code to https://github.com/layumi/dgcnn  
