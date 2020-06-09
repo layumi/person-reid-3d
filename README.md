@@ -12,10 +12,12 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Per
 ## Prerequisites
 - Python 3.6
 - GPU Memory >= 4G (e.g., GTX1080)
-- Pytorch = 1.13.0 or 1.12.0 or 1.11.0 (Not Latest. Latest version is incompatible, since it changes the C++ interfaces.)
+- Pytorch = 1.4.0 (Not Latest. Latest version is incompatible, since it changes the C++ interfaces.)
 
 ## Install
-
+```setup
+pip install -r requirements.txt
+```
 
 ## Prepare Data 
 
