@@ -16,6 +16,8 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Per
 
 ## Install
 ```setup
+conda create --name OG python=3.7
+source activate OG
 pip install -r requirements.txt
 ```
 
