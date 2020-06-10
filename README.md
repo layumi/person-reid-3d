@@ -8,7 +8,7 @@
 Thanks for your attention. In this repo, we provide the code for the paper [[Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
 
 ## News
-- You may directly download my generated 3D data at [OneDrive](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EQXEskhdd3xPjdFRxAUtB9cB7RkjAdzS5YXRH8QIf_TWAw?e=IhqNpi), and therefore you could skip the data preparation part.
+- You may directly download my generated 3D data at [[OneDrive]](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EQXEskhdd3xPjdFRxAUtB9cB7RkjAdzS5YXRH8QIf_TWAw?e=IhqNpi) or [[GoogleDrive]](https://drive.google.com/file/d/1ih-LrkdGUvNK3rEUNJIq4LTvcgVOXnnM/view?usp=sharing), and therefore you could skip the data preparation part.
 
 ## Prerequisites
 - Python 3.6 or 3.7
