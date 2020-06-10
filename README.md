@@ -127,3 +127,6 @@ We thank the great works of DGL, DGCNN and PointNet++. You may check their code 
 - https://github.com/dmlc/dgl/tree/master/examples/pytorch/pointcloud
 - https://github.com/WangYueFt/dgcnn
 - https://github.com/erikwijmans/Pointnet2_PyTorch
+
+## Acknowledge
+I would like to thank the helpful comments and suggestions from Yaxiong Wang, Yuhang Ding, Qian Liu, Chuchu Han, Tianqi Tang, Zonghan Wu and Qipeng Guo.
