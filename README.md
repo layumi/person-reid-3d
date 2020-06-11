@@ -128,5 +128,8 @@ We thank the great works of DGL, DGCNN and PointNet++. You may check their code 
 - https://github.com/WangYueFt/dgcnn
 - https://github.com/erikwijmans/Pointnet2_PyTorch
 
+The baseline models used in the paper are modified from:
+- https://github.com/layumi/Person_reID_baseline_pytorch
+
 ## Acknowledge
 I would like to thank the helpful comments and suggestions from Yaxiong Wang, Yuhang Ding, Qian Liu, Chuchu Han, Tianqi Tang, Zonghan Wu and Qipeng Guo.
