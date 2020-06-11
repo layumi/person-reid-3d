@@ -46,7 +46,7 @@ ln -s ../MSMT/pytorch  ./2DMSMT
 ```
 
 Generate the 3D data via the code at https://github.com/layumi/hmr 
-(I modified the code from https://github.com/akanazawa/hmr and added 2D-to-3D mapping.)
+(I modified the code from https://github.com/akanazawa/hmr and added 2D-to-3D color mapping.)
 
 ## Training 
 - Market-1501
