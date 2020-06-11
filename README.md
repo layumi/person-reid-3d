@@ -46,7 +46,7 @@ ln -s ../MSMT/pytorch  ./2DMSMT
 ```
 
 Generate the 3D data via the code at https://github.com/layumi/hmr 
-(I modified the code from https://github.com/akanazawa/hmr)
+(I modified the code from https://github.com/akanazawa/hmr and added 2D-to-3D mapping.)
 
 ## Training 
 - Market-1501
@@ -125,7 +125,8 @@ You may cite it in your paper. Thanks a lot.
 ```
 
 ## Related Work
-We thank the great works of DGL, DGCNN and PointNet++. You may check their code at
+We thank the great works of hmr, DGL, DGCNN and PointNet++. You may check their code at
+- https://github.com/akanazawa/hmr
 - https://github.com/dmlc/dgl/tree/master/examples/pytorch/pointcloud
 - https://github.com/WangYueFt/dgcnn
 - https://github.com/erikwijmans/Pointnet2_PyTorch
