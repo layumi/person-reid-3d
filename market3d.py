@@ -1,3 +1,7 @@
+"""
+@author:  Zhedong Zheng
+@contact: zdzheng12@gmail.com
+"""
 from torchvision import datasets
 import os
 import numpy as np
