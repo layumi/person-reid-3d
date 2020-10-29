@@ -112,7 +112,7 @@ Since OG-Net is really small, I has included trained models in this github repo 
 
 ### [ModelNet Performance] 
 I add OG-Net code to https://github.com/layumi/dgcnn  
-Results on ModelNet are 92.02 Top1 Accuracy / 88.84 MeanClass Top1 Accuracy.
+Results on ModelNet are 93.3 Top1 Accuracy / 90.5 MeanClass Top1 Accuracy.
 
 
 ## Citation
