@@ -105,10 +105,10 @@ Since OG-Net is really small, I has included trained models in this github repo 
 
 ## Results
 ### [Person Re-ID Performance]
-| Model name         | Market  | Duke | MSMT|
+| Model name         | Market  | Duke | MSMT| 
 | ------------------ |---------------- | -------------- | -------------- |
-| OG-Net-Small |  80.85(59.56) |  70.11(49.93)     |   34.87(14.57)   | 
-| OG-Net   |    80.94(59.97)  |   71.77(50.81) |  36.37(15.74)    |
+| OG-Net-Small |  85.90(66.93) |  75.67(55.72)     |   46.67(22.24)   | 
+| OG-Net   |    86.19(68.09)  |   76.93(57.20) |  47.82(22.82)    |
 
 ### [ModelNet Performance] 
 I add OG-Net code to https://github.com/layumi/dgcnn  
