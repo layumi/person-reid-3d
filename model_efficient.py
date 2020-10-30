@@ -8,7 +8,12 @@ from pointnet2_ops import pointnet2_utils
 from gated_gcn_layer import GatedGCNLayer
 from KNNGraphE import KNNGraphE
 import numpy as np
-from utils import weights_init_kaiming, weights_init_classifier, drop_connect, farthest_point_sample
+from market3d import Market3D
+from utils import get_graph_feature, weights_init_kaiming, weights_init_classifier, drop_connect, farthest_point_sample, channel_shuffle
+from ptflops import get_model_complexity_info
+from functools import partial
+from torch.utils.data import DataLoader
+
 
 class EdgeConv_Light(EdgeConv):
     def __init__(self, in_feat, out_feat, batch_norm=False):
@@ -16,13 +21,13 @@ class EdgeConv_Light(EdgeConv):
         self.theta = nn.Linear(in_feat, out_feat, bias = False)
         self.phi = nn.Linear(in_feat, out_feat, bias = False)
 
-class Model(nn.Module):
+class ModelE(nn.Module):
     def __init__(self, k, feature_dims, emb_dims, output_classes, init_points = 512, input_dims=3,
                  dropout_prob=0.5, npart=1, id_skip=False, drop_connect_rate=0, res_scale = 1.0,
                  light = False, bias = False, cluster='xyz', conv='EdgeConv', use_xyz=True, 
                  use_se = True, graph_jitter = False, pre_act = False, norm = 'bn', stride=2, 
-                 layer_drop = 0):
-        super(Model, self).__init__()
+                 layer_drop = 0, num_conv=1):
+        super(ModelE, self).__init__()
 
         self.npart = npart
         self.norm = norm
@@ -41,90 +46,60 @@ class Model(nn.Module):
         self.conv_type = conv
         self.init_points = init_points
         self.k = k
+        self.light = light
         self.pre_act = pre_act
+        self.num_conv = num_conv
         #self.proj_in = nn.Linear(input_dims, input_dims)
 
         self.num_layers = len(feature_dims)
         npoint = init_points
         last_npoint = -1
         for i in range(self.num_layers):
-            if pre_act:
-                if norm == 'ln':
-                    if layer_drop >0:
-                        self.bn.append( nn.Sequential(nn.LayerNorm(feature_dims[i-1] if i > 0 else input_dims), 
-                                        nn.Dropout(layer_drop)))
-                    else:
-                        self.bn.append(nn.LayerNorm(feature_dims[i-1] if i > 0 else input_dims))
-                else:
-                    if layer_drop >0:
-                        self.bn.append( nn.Sequential(nn.BatchNorm1d(feature_dims[i-1] if i > 0 else input_dims), 
-                                        nn.Dropout(layer_drop)))
-                    else:
-                        self.bn.append(nn.BatchNorm1d(feature_dims[i-1] if i > 0 else input_dims))
             if k==1: 
-                self.conv.append(nn.Linear(feature_dims[i-1] if i > 0 else input_dims, 
-                                     feature_dims[i] ))
+                self.conv.append(nn.Conv2d(feature_dims[i-1] if i > 0 else input_dims, 
+                                     feature_dims[i] , kernel_size=1, 
+                                     bias = True))
+                self.bn.append( nn.BatchNorm1d( feature_dims[i] ))
             elif conv == 'EdgeConv':
-                if light:
-                    self.conv.append(EdgeConv_Light(
-                        feature_dims[i - 1] if i > 0 else input_dims,
-                        feature_dims[i],
-                        batch_norm= False if pre_act or norm == 'ln'else True))
-                    if not pre_act:
-                        if norm == 'ln':
-                            if layer_drop >0:
-                                self.bn.append( nn.Sequential(nn.LayerNorm(feature_dims[i]),
-                                        nn.Dropout(layer_drop)))
-                            else:
-                                self.bn.append(nn.LayerNorm(feature_dims[i]))
-                        else:
-                            self.bn.append(nn.Dropout(layer_drop))
-                else: 
-                    self.conv.append(EdgeConv(
-                        feature_dims[i - 1] if i > 0 else input_dims,
-                        feature_dims[i],
-                        batch_norm= False if pre_act else True))
-                    if not pre_act:
-                        if norm == 'ln':
-                            if layer_drop >0:
-                                self.bn.append( nn.Sequential(nn.LayerNorm(feature_dims[i]),
-                                        nn.Dropout(layer_drop)))
-                            else:
-                                self.bn.append(nn.LayerNorm(feature_dims[i]))
-                        else:
-                            self.bn.append(nn.Dropout(layer_drop))
+                group_num = 2 if light and i>0 else 1
+                for j in range(self.num_conv):
+                    if j==0:
+                        self.conv.append( nn.Conv2d(
+                            feature_dims[i - 1]*2 if i > 0 else input_dims*2,
+                            feature_dims[i], 
+                            kernel_size=1,
+                            groups = group_num, 
+                            bias = True ))
+                    else: 
+                        self.conv.append( nn.Conv2d(
+                            feature_dims[i]*2, 
+                            feature_dims[i],
+                            kernel_size=1,
+                            groups = group_num,
+                            bias = True ))
 
-            elif conv == 'GATConv':
-                    self.conv.append(GATConv(
-                        feature_dims[i - 1] if i > 0 else input_dims,
-                        feature_dims[i],
-                        feat_drop=0.2, attn_drop=0.2,
-                        residual=True,
-                        num_heads=1))
-            elif conv == 'GraphConv':
-                    self.conv.append( GraphConv(
-                        feature_dims[i - 1] if i > 0 else input_dims,
-                        feature_dims[i]))
-            elif conv == 'SAGEConv':
-                    self.conv.append( SAGEConv(
-                        feature_dims[i - 1] if i > 0 else input_dims,
-                        feature_dims[i],
-                        feat_drop=0.2,
-                        aggregator_type='mean', 
-                        norm = nn.BatchNorm1d(feature_dims[i])
-                        ) )
-            elif conv == 'SGConv':
-                    self.conv.append( SGConv(
-                        feature_dims[i - 1] if i > 0 else input_dims,
-                        feature_dims[i]) )
-            elif conv == 'GatedGCN': # missing etypes
-                    self.conv.append( GatedGCNLayer(
-                        feature_dims[i - 1] if i > 0 else input_dims,
-                        feature_dims[i], 
-                        dropout=0.0, 
-                        graph_norm=True, batch_norm=True, residual=True)
-                        )
+                    if i==0 and j==0 and pre_act:
+                        norm_dim = input_dims
+                    else:
+                        norm_dim = feature_dims[i-1] if pre_act and j==0 else feature_dims[i]
 
+                    if norm == 'ln':
+                        if layer_drop>0:
+                            self.bn.append(nn.Sequential( 
+                                 nn.LayerNorm(norm_dim),
+                                 nn.Dropout(layer_drop)) ) 
+                        else:
+                            self.bn.append(
+                                 nn.LayerNorm(norm_dim))
+                    else:
+                        if layer_drop>0:
+                            self.bn.append(nn.Sequential( 
+                                 nn.BatchNorm1d(norm_dim),
+                                 nn.Dropout(layer_drop)) )
+                        else:
+                            self.bn.append(
+                                 nn.BatchNorm1d(norm_dim))
+                                
 
             if i>0 and feature_dims[i]>feature_dims[i-1]:
                 npoint = npoint//stride
@@ -132,7 +107,7 @@ class Model(nn.Module):
             if npoint != last_npoint:
                 if id_skip:
                     self.conv_s2.append( nn.Linear(feature_dims[i-1] if i > 0 else input_dims, 
-                                   feature_dims[i] ))
+                                   feature_dims[i]))
                 self.sa.append(PointnetSAModule(
                     npoint=npoint,
                     radius=0.2,
@@ -144,7 +119,7 @@ class Model(nn.Module):
                     use_se = use_se,
                     use_xyz = use_xyz,
                     use_neighbor = False,
-                    light = light
+                    light = False
                 ))
                 last_npoint = npoint
             #if id_skip:
@@ -202,46 +177,64 @@ class Model(nn.Module):
             batch_size, n_points, feature_dim  = h.shape
 
             ######## Build Graph #########
-            with torch.no_grad():
-                if self.k>1:
-                    if i == self.num_layers-1:
-                        if self.cluster == 'xyz':
-                            g = self.nng(xyz, istrain = istrain, jitter= self.graph_jitter)
-                        elif self.cluster == 'rgb':
-                            g = self.nng(h, istrain=istrain, jitter= self.graph_jitter)
-                        elif self.cluster == 'xyzrgb':
-                            g = self.nng( torch.cat((xyz,h), 2), istrain=istrain, jitter= self.graph_jitter)
-                    elif n_points !=  last_point:
-                        g = self.nng(xyz, istrain=istrain, jitter= self.graph_jitter)
             last_point = n_points
 
             ######### Dynamic Graph Conv #########
-            if self.pre_act == True:
-                if self.norm == 'ln':
-                    h = self.bn[i](h)
-                else:
-                    h = h.transpose(1, 2).contiguous()
-                    h = self.bn[i](h)
+            xyz = xyz.transpose(1, 2).contiguous()
+            #print(h.shape) # batchsize x point_number x feature_dim
+            h = h.transpose(1, 2).contiguous()
+            for j in range(self.num_conv):
+                index = self.num_conv*i+j
+                ####### BN + ReLU #####
+                if self.pre_act == True:
+                    if self.norm == 'ln':
+                        h = h.transpose(1, 2).contiguous()
+                        h = self.bn[index](h)
+                        h = h.transpose(1, 2).contiguous()
+                    else:
+                        h = self.bn[index](h)
                     h = F.leaky_relu(h, 0.2)
-                    h = h.transpose(1, 2).contiguous()
 
-            h = h.view(batch_size * n_points, -1)
-            if self.k==1:
-                h = self.conv[i](h)
-            elif self.conv_type == 'GatedGCN':
-                h = self.conv[i](g, h, g.edata['feat'], snorm_n = 1/g.number_of_nodes() , snorm_e = 1/g.number_of_edges())
-            else:
-                h = self.conv[i](g, h)
+                ####### Graph Feature ###########
+                if self.k==1 and j==0:
+                    h = h.unsqueeze(-1)
+                else:
+                    if i == self.num_layers-1:
+                        if self.cluster == 'xyz':
+                            h = get_graph_feature(xyz, h, k=self.k)
+                        elif self.cluster == 'xyzrgb' or self.cluster == 'allxyzrgb':
+                            h = get_graph_feature( torch.cat( (xyz, h), 1), h, k=self.k)
+                    else:
+                    # Common Layers
+                        if self.cluster == 'allxyzrgb':
+                            h = get_graph_feature( torch.cat( (xyz, h), 1), h, k=self.k)
+                        else:
+                            h = get_graph_feature(xyz, h, k=self.k)
 
-            if self.pre_act == False:
-                if self.norm == 'ln':
-                    h = self.bn[i](h)
-                h = F.leaky_relu(h, 0.2)
+                ####### Conv ##########
+                if self.light == True and i >0:
+                    #shuffle after the first layer
+                    h = channel_shuffle(h, 2)
+                    h = self.conv[index](h)
+                else:
+                    h = self.conv[index](h)
+                h = h.max(dim=-1, keepdim=False)[0]
+                ####### BN + ReLU #####
+                if self.pre_act == False:
+                    if self.norm == 'ln':
+                        h = h.transpose(1, 2).contiguous()
+                        h = self.bn[index](h)
+                        h = h.transpose(1, 2).contiguous()
+                    else: 
+                        h = self.bn[index](h)
+                    h = F.leaky_relu(h, 0.2)
 
-            h = h.view(batch_size, n_points, -1)
+            h = h.transpose(1, 2).contiguous()
+            #print(h.shape) # batchsize x point_number x feature_dim
             batch_size, n_points, feature_dim  = h.shape
 
-            if self.id_skip: 
+            ######### Residual Before Downsampling#############
+            if self.id_skip==1: 
                 if istrain and self.drop_connect_rate>0:
                     h = drop_connect(h, p=self.drop_connect_rate, training=istrain)
                 if feature_dim != last_feature_dim:
@@ -253,9 +246,27 @@ class Model(nn.Module):
                 h = h.transpose(1, 2).contiguous()
                 xyz, h  = self.sa[s2_count](xyz_input, h)
                 h = h.transpose(1, 2).contiguous()
+                if self.id_skip == 2: 
+                    h_input = pointnet2_utils.gather_operation(
+                        h_input.transpose(1, 2).contiguous(), 
+                        pointnet2_utils.furthest_point_sample(xyz_input, h.shape[1] )
+                    ).transpose(1, 2).contiguous()
+            else:
+                xyz = xyz.transpose(1, 2).contiguous()
+
+            ######### Residual After Downsampling (Paper) #############
+            if self.id_skip==2:
+                if istrain and self.drop_connect_rate>0:
+                    h = drop_connect(h, p=self.drop_connect_rate, training=istrain)
+                if feature_dim != last_feature_dim:
+                    h_input = self.conv_s2[s2_count](h_input)
+                h = h_input + self.res_scale * h
+
+            if feature_dim != last_feature_dim:
                 s2_count +=1
                 last_feature_dim = feature_dim
 
+            #print(xyz.shape, h.shape)
         if self.npart==1:
             # Pooling
             h_max, _ = torch.max(h, 1)
@@ -287,16 +298,16 @@ class Model(nn.Module):
             h = hs
         return h
 
-class Model_dense(Model):
+class ModelE_dense(ModelE):
     def __init__(self, k, feature_dims, emb_dims, output_classes, init_points = 512, input_dims=3,
                  dropout_prob=0.5, npart=1, id_skip=False, drop_connect_rate=0, res_scale=1.0, 
                  light=False, bias = False, cluster='xyz', conv='EdgeConv', use_xyz=True, 
                  use_se=True, graph_jitter = False, pre_act = False, norm = 'bn', stride=2,
-                 layer_drop = 0):
+                 layer_drop = 0, num_conv=1):
         super().__init__(k, feature_dims, emb_dims, output_classes, init_points, input_dims, 
                  dropout_prob, npart, id_skip, drop_connect_rate, res_scale, 
                  light, bias, cluster, conv, use_xyz, use_se, graph_jitter, pre_act, norm, stride,
-                 layer_drop)
+                 layer_drop, num_conv)
         self.sa = nn.ModuleList()
         npoint = init_points
         last_npoint = -1
@@ -320,59 +331,21 @@ class Model_dense(Model):
                     use_se = use_se,
                     use_xyz = use_xyz,
                     use_neighbor = False,
-                    light = light
+                    light = False
                 )
                 )
                 last_npoint = npoint
         # since add 3 branch
         weights_init_kaiming2 = lambda x:weights_init_kaiming(x, L=self.num_layers)
         self.sa.apply(weights_init_kaiming2)
-
-class Model_dense2(Model):
-    def __init__(self, k, feature_dims, emb_dims, output_classes, init_points = 512, input_dims=3,
-                 dropout_prob=0.5, npart=1, id_skip=False, drop_connect_rate=0, res_scale=1.0,
-                 light=False, bias = False, cluster='xyz', conv='EdgeConv', 
-                 use_xyz=True, graph_jitter = False, pre_act = False, norm = 'bn', stride=2,
-                 layer_drop = 0):
-        super().__init__(k, feature_dims, emb_dims, output_classes, init_points, input_dims,
-                 dropout_prob, npart, id_skip, drop_connect_rate, res_scale,
-                 light, bias, cluster, conv, use_xyz, graph_jitter, pre_act, norm, stride,
-                 layer_drop)
-        module_number = len(self.sa)
-        self.sa = nn.ModuleList()
-        npoint = init_points
-        last_npoint = -1
-        for i in range(module_number):
-            if i>0 and feature_dims[i]>feature_dims[i-1]:
-                npoint = npoint//stride
-            if npoint != last_npoint:
-                self.sa.append( PointnetSAModuleMSG(
-                    npoint=npoint,
-                    radii = [0.1, 0.2, 0.4],
-                    nsamples = [8, 16, 32],
-                    mlps=[
-                      [feature_dims[i], feature_dims[i]//2, feature_dims[i]//4],
-                      [feature_dims[i], feature_dims[i]//2, feature_dims[i]//4],
-                      [feature_dims[i], feature_dims[i]//2, feature_dims[i]//2],
-                    ],
-                    fuse = 'concat', # fuse = 'add'
-                    norml = 'bn',
-                    activation = 'relu',
-                    use_se = True,
-                    use_xyz = use_xyz,
-                    use_neighbor = False,
-                    light = light
-                ))
-                last_npoint = npoint
-        # since add 3 branch
-        weights_init_kaiming2 = lambda x:weights_init_kaiming(x, L=self.num_layers)
-        self.sa.apply(weights_init_kaiming2)
-
 
 if __name__ == '__main__':
 # Here I left a simple forward function.
 # Test the model, before you train it. 
-    net = Model_dense( 20, [48, 96, 96, 192, 192, 192, 384, 384], [512], output_classes=751, init_points = 768, input_dims=3, dropout_prob=0.5, npart= 2, id_skip=True, pre_act = False, norm = 'ln', layer_drop=0.1)
+    net = ModelE_dense( 20, [48, 96, 192,384], [512],  
+                        output_classes=751, cluster='xyzrgb', init_points = 768, 
+                        input_dims=3, dropout_prob=0.5, npart= 1, id_skip=0,  
+                        pre_act = False, norm = 'bn', layer_drop=0.1, num_conv=1, light=False)
 #    net = Model_dense( 20, [40,40,80,80,192,192,320,320, 512], [512], output_classes=751, 
 #                     init_points = 512, input_dims=3, dropout_prob=0.5, npart= 1, id_skip=True, 
 #                     light=True, cluster='xyz', conv='SAGEConv', use_xyz=False)
@@ -384,7 +357,23 @@ if __name__ == '__main__':
     model_parameters = filter(lambda p: p.requires_grad, net.parameters())
     params = sum([np.prod(p.size()) for p in model_parameters])
     print('Number of parameters: %.2f M'% (params/1e6) )
-    output = net(xyz, rgb)
-    print('net output size:')
+    #output = net(xyz, rgb)
+    market_data = Market3D('./2DMarket', flip=True, slim=0.5, bg=True)
+
+    CustomDataLoader = partial(
+        DataLoader,
+        num_workers=0,
+        batch_size=8,
+        shuffle=True,
+        drop_last=True)
+    query_loader = CustomDataLoader(market_data.query())
+    batch0,label0 = next(iter(query_loader))
+    batch0 = batch0[0].unsqueeze(0)
+    print(batch0.shape)
+    macs, params = get_model_complexity_info(net, batch0.cuda(), ((round(6890*0.5), 3)  ), as_strings=True, print_per_layer_stat=False, verbose=True)
+#print(macs)
+    print('{:<30}  {:<8}'.format('Computational complexity: ', macs))
+    print('{:<30}  {:<8}'.format('Number of parameters: ', params))
+
     #print(output.shape)
         

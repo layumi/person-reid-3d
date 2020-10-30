@@ -1,7 +1,3 @@
-"""
-@author:  Zhedong Zheng
-@contact: zdzheng12@gmail.com
-"""
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -9,6 +5,8 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from market3d import Market3D
 from model import Model,Model_dense,Model_dense2
+from model_efficient import ModelE_dense
+from model_efficient2 import ModelE_dense2
 from dgl.data.utils import download, get_download_dir
 import torch.backends.cudnn as cudnn
 from functools import partial
@@ -22,10 +20,13 @@ import numpy as np
 from ptflops import get_model_complexity_info
 from DGCNN import DGCNN
 from pointnet2_model import PointNet2SSG, PointNet2MSG
+import swa_utils
+from utils import L2norm
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--gpu_ids',default='0', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
 parser.add_argument('--feature_dims',default=[64,128,256,512], type=list,help='gpu_ids: e.g. 0  0,1,2  0,2')
+parser.add_argument('--which-epoch', type=str, default='last')
 parser.add_argument('--dataset-path', type=str, default='./2DMarket/')
 parser.add_argument('--load-model-path', type=str, default='./snapshot/')
 parser.add_argument('--name', type=str, default='b24_lr2')
@@ -33,15 +34,18 @@ parser.add_argument('--cluster', type=str, default='xyz')
 parser.add_argument('--conv', type=str, default='EdgeConv')
 parser.add_argument('--num-epochs', type=int, default=100)
 parser.add_argument('--num-workers', type=int, default=8)
+parser.add_argument('--num_conv', type=int, default=1)
 parser.add_argument('--init_points', type=int, default=512)
+parser.add_argument('--stride', type=int, default=2)
 parser.add_argument('--class-num', type=int, default=751)
 parser.add_argument('--k', type=int, default=20)
 parser.add_argument('--use_DGCNN', action='store_true', help='use DGCNN' )
+parser.add_argument('--use2', action='store_true', help='use model2' )
 parser.add_argument('--use_SSG', action='store_true', help='use SSG' )
 parser.add_argument('--use_MSG', action='store_true', help='use MSG' )
 parser.add_argument('--npart', type=int, default=1)
 parser.add_argument('--channel', type=int, default=6)
-parser.add_argument('--batch-size', type=int, default=32)
+parser.add_argument('--batch-size', type=int, default=48)
 parser.add_argument('--resume', action='store_true', help='resume training' )
 parser.add_argument('--flip', action='store_true', help='flip' )
 parser.add_argument('--id_skip', action='store_true', help='skip connection' )
@@ -50,32 +54,41 @@ parser.add_argument('--norm', action='store_true', help='use normalized input' )
 parser.add_argument('--bg', action='store_true', help='use background' )
 parser.add_argument('--light', action='store_true', help='use light model' )
 parser.add_argument('--no_se', action='store_true', help='use light model' )
+parser.add_argument('--final_bn', action='store_true', help='add bn' )
 parser.add_argument('--slim', type=float, default=0.3 )
+parser.add_argument('--layer_drop', type=float, default=0.0 )
+parser.add_argument('--norm_layer', type=str, default='bn')
 parser.add_argument('--rotate', type=int, default=0)
 parser.add_argument('--no_xyz', action='store_true')
+parser.add_argument('--shuffle', action='store_true')
+parser.add_argument('--pre_act', action='store_true')
 parser.add_argument('--D2', action='store_true')
+parser.add_argument('--efficient', action='store_true')
+parser.add_argument('--wa', action='store_true')
+parser.add_argument('--update_bn', action='store_true')
 parser.add_argument('--res_scale', type=float, default=1.0 )
 opt = parser.parse_args()
 
 config_path = os.path.join('./snapshot',opt.name,'opts.yaml')
 with open(config_path, 'r') as stream:
-        config = yaml.load(stream)
-
+        config = yaml.safe_load(stream)
+#assert not ('MSMT' in opt.name)
 opt.slim = config['slim'] 
 print('slim: %.2f:'%opt.slim)
 opt.use_dense = config['use_dense']
 opt.k = config['k']
 opt.class_num = config['class_num']
-opt.norm = config['channel']
+opt.channel = config['channel']
 opt.init_points= config['init_points'] 
 opt.use_dense2 = config['use_dense2']
 opt.norm = config['norm']
 opt.npart = config['npart']
 opt.id_skip = config['id_skip']
 opt.feature_dims = config['feature_dims']
+opt.light = config['light']
 
-if 'light' in config:
-    opt.light = config['light']
+if 'use2' in config:
+    opt.use2 = config['use2']
 
 if 'res_scale' in config:
     opt.res_scale = config['res_scale']
@@ -102,6 +115,38 @@ if 'no_xyz' in config:
     opt.no_xyz = config['no_xyz']
 if 'D2' in config:
     opt.D2 = config['D2']
+
+if 'pre_act' in config:
+    opt.pre_act = config['pre_act']
+
+if 'norm_layer' in config:
+    opt.norm_layer = config['norm_layer']
+else:
+    opt.norm_layer = 'bn'
+
+if 'stride' in config:
+    opt.stride = config['stride']
+else:
+    opt.stride = 2
+
+if 'layer_drop' in config:
+    opt.layer_drop = config['layer_drop']
+else:
+    opt.layer_drop = 0
+
+if 'num_conv' in config:
+    opt.num_conv = config['num_conv']
+else:
+    opt.num_conv = 1
+
+if 'efficient' in config:
+    opt.efficient = config['efficient']
+
+if 'final_bn' in config:
+    opt.final_bn = config['final_bn']
+
+if 'shuffle' in config:
+    opt.shuffle = config['shuffle']
 
 #if type(opt.feature_dims)==:
 #   str_features = opt.feature_dims.split(',')
@@ -145,7 +190,7 @@ def extract_feature(model, test_loader, dev, rotate = 0):
         for data, label in tq: # n,6890,6
             num_examples = label.shape[0]
             n, c, l = data.size()
-            ff = torch.FloatTensor(n,512).zero_().cuda()
+            ff = torch.FloatTensor(n, 512*opt.npart ).zero_().cuda()
             data, label = data.to(dev), label.to(dev).squeeze().long()
             xyz = data[:,:,0:3].contiguous()
             rgb = data[:,:,3:].contiguous()
@@ -156,16 +201,29 @@ def extract_feature(model, test_loader, dev, rotate = 0):
             elif rotate == 180:
                 xyz[:,:,1] *= -1
             output = model(xyz, rgb, istrain=False)
-            ff += output
+            if opt.npart>1:
+                for i in range(opt.npart):
+                    start = 512*i
+                    end = 512*i + 512
+                    ff[:, start:end] += L2norm(output[i])
+            else:
+                ff += output
             #flip
             #xyz[:,:,0] *= -1
             #scale
             xyz *=1.1
             output = model(xyz, rgb, istrain=False)
-            ff += output
+            if opt.npart>1:
+                for i in range(opt.npart):
+                    start = 512*i
+                    end = 512*i + 512
+                    ff[:, start:end] += L2norm(output[i])
+            else:
+                ff += output
 
-            fnorm = torch.norm(ff, p=2, dim=1, keepdim=True)
-            ff = ff.div(fnorm.expand_as(ff))
+            ff = L2norm(ff)
+            #fnorm = torch.norm(ff, p=2, dim=1, keepdim=True)
+            #ff = ff.div(fnorm.expand_as(ff))
             features = torch.cat((features,ff.data.cpu()), 0)
     return features
 
@@ -187,6 +245,7 @@ def get_id(img_path):
 
 market_data = Market3D(opt.dataset_path, flip=False, slim=opt.slim, norm =opt.norm, erase=0, channel = opt.channel, bg = opt.bg, D2 = opt.D2)
 
+train_loader = CustomDataLoader(market_data.train_all())
 query_loader = CustomDataLoader(market_data.query())
 gallery_loader = CustomDataLoader(market_data.gallery())
 
@@ -198,10 +257,14 @@ query_cam,query_label = get_id(query_path)
 
 dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-if opt.use_dense:
-    model = Model_dense(opt.k, opt.feature_dims, [512], output_classes=opt.class_num, init_points = opt.init_points, input_dims=3, npart = opt.npart, id_skip = opt.id_skip, res_scale = opt.res_scale, light=opt.light, cluster = opt.cluster, conv = opt.conv,  use_xyz = not opt.no_xyz, use_se = not opt.no_se)
+if opt.use_dense and not opt.efficient:
+    model = Model_dense(opt.k, opt.feature_dims, [512], output_classes=opt.class_num, init_points = opt.init_points, input_dims=3, npart = opt.npart, id_skip = opt.id_skip, res_scale = opt.res_scale, light=opt.light, cluster = opt.cluster, conv = opt.conv,  use_xyz = not opt.no_xyz, use_se = not opt.no_se, pre_act = opt.pre_act, norm = opt.norm_layer, stride = opt.stride, layer_drop = opt.layer_drop)
+elif opt.use2:
+    model = ModelE_dense2(opt.k, opt.feature_dims, [512], output_classes=opt.class_num, init_points = opt.init_points, input_dims=3, npart = opt.npart, id_skip = opt.id_skip, res_scale = opt.res_scale, light=opt.light, cluster = opt.cluster, conv = opt.conv,  use_xyz = not opt.no_xyz, use_se = not opt.no_se, pre_act = opt.pre_act, norm = opt.norm_layer, stride = opt.stride, layer_drop = opt.layer_drop, num_conv = opt.num_conv, shuffle = opt.shuffle)
+elif opt.efficient:
+    model = ModelE_dense(opt.k, opt.feature_dims, [512], output_classes=opt.class_num, init_points = opt.init_points, input_dims=3, npart = opt.npart, id_skip = opt.id_skip, res_scale = opt.res_scale, light=opt.light, cluster = opt.cluster, conv = opt.conv,  use_xyz = not opt.no_xyz, use_se = not opt.no_se, pre_act = opt.pre_act, norm = opt.norm_layer, stride = opt.stride, layer_drop = opt.layer_drop, num_conv = opt.num_conv )
 elif opt.use_dense2:
-    model = Model_dense2(opt.k, opt.feature_dims, [512], output_classes=opt.class_num, init_points = opt.init_points, input_dims=3, npart = opt.npart, id_skip = opt.id_skip, res_scale = opt.res_scale, light = opt.light, cluster = opt.cluster, conv=opt.conv,  use_xyz = not opt.no_xyz)
+    model = Model_dense2(opt.k, opt.feature_dims, [512], output_classes=opt.class_num, init_points = opt.init_points, input_dims=3, npart = opt.npart, id_skip = opt.id_skip, res_scale = opt.res_scale, light = opt.light, cluster = opt.cluster, conv=opt.conv,  use_xyz = not opt.no_xyz, pre_act = opt.pre_act)
 elif opt.use_DGCNN:
     model = DGCNN( 20, [64,128,256,512], [512,512], output_classes=opt.class_num,  input_dims=3)
 elif opt.use_SSG:
@@ -209,11 +272,12 @@ elif opt.use_SSG:
 elif opt.use_MSG:
     model = PointNet2MSG(output_classes=opt.class_num, init_points = 512, input_dims=3, use_xyz = not opt.no_xyz)
 else:
-    model = Model(opt.k, opt.feature_dims, [512], output_classes=opt.class_num, init_points = opt.init_points, input_dims=3, npart = opt.npart, id_skip = opt.id_skip, res_scale = opt.res_scale, light = opt.light, cluster = opt.cluster, conv=opt.conv,  use_xyz = not opt.no_xyz)
+    model = Model(opt.k, opt.feature_dims, [512], output_classes=opt.class_num, init_points = opt.init_points, input_dims=3, npart = opt.npart, id_skip = opt.id_skip, res_scale = opt.res_scale, light = opt.light, cluster = opt.cluster, conv=opt.conv,  use_xyz = not opt.no_xyz, pre_act = opt.pre_act, norm = opt.norm_layer, stride = opt.stride, layer_drop = opt.layer_drop)
 
-#print(model)
+print(model)
 #model = model.to(dev)
-model_path = opt.load_model_path+opt.name+'/model_last.pth'
+model_path = opt.load_model_path+opt.name+'/model_%s.pth'%opt.which_epoch
+
 try:
     model.load_state_dict(torch.load(model_path, map_location=dev))
     model.proj_output = nn.Sequential()
@@ -223,9 +287,17 @@ except:
     model.load_state_dict(torch.load(model_path, map_location=dev))
     model.module.proj_output = nn.Sequential()
     model.module.classifier = nn.Sequential()
-print(model)
+    if opt.npart>1:
+        for i in range(opt.npart):
+            model.module.proj_outputs[i] = nn.Sequential()
 
-macs, params = get_model_complexity_info(model, (  (round(6890*opt.slim), 3)  ), as_strings=True, print_per_layer_stat=False, verbose=True)
+
+print(model_path)
+
+batch0,label0 = next(iter(query_loader))
+batch0 = batch0[0].unsqueeze(0)
+print(batch0.shape)
+macs, params = get_model_complexity_info(model, batch0, ((round(6890*opt.slim), 3)  ), as_strings=True, print_per_layer_stat=False, verbose=True)
 #print(macs)
 print('{:<30}  {:<8}'.format('Computational complexity: ', macs))
 print('{:<30}  {:<8}'.format('Number of parameters: ', params))
@@ -238,6 +310,10 @@ if not os.path.exists('./snapshot/'):
 save_model_path = './snapshot/' + opt.name
 if not os.path.exists(save_model_path):
     os.mkdir(save_model_path)
+
+if opt.update_bn:
+    with torch.no_grad():
+        swa_utils.update_bn( train_loader, model, device = 'cuda')
 
 # Extract feature
 with torch.no_grad():

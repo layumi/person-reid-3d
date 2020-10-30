@@ -1,7 +1,3 @@
-"""
-@author:  Zhedong Zheng
-@contact: zdzheng12@gmail.com
-"""
 from torchvision import datasets
 import os
 import numpy as np
@@ -62,9 +58,9 @@ class Market3DFolder(datasets.ImageFolder):
         super(Market3DFolder, self).__init__(root, transform)
         targets = np.asarray([s[1] for s in self.samples])
         if bg:
-            objs = [s[0].replace('2DMarket','3DMarket+bg').replace('2DDuke','3DDuke+bg').replace('2DMSMT','3DMSMT+bg')+'.obj' for s in self.samples]
+            objs = [s[0].replace('2DMarket','3DMarket+bg').replace('2DDuke','3DDuke+bg').replace('2DMSMT','3DMSMT+bg').replace('2DCUHK','3DCUHK+bg').replace('2DVIP','3DVIP+bg')+'.obj' for s in self.samples]
         else:
-            objs = [s[0].replace('2DMarket','3DMarket').replace('2DDuke','3DDuke').replace('2DMSMT','3DMSMT+bg')+'.obj' for s in self.samples]
+            objs = [s[0].replace('2DMarket','3DMarket').replace('2DDuke','3DDuke').replace('2DMSMT','3DMSMT+bg').replace('2DCUHK','3DCUHK+bg').replace('2DVIP','3DVIP+bg')+'.obj' for s in self.samples]
 
         self.targets = targets
         self.objs = objs
@@ -78,6 +74,7 @@ class Market3DFolder(datasets.ImageFolder):
         self.img_num = len(self.samples)
         self.class_num = len(np.unique(targets))
         self.img = self.samples
+        self.root = root
         self.D2 = D2
 
     def __getitem__(self, index):
@@ -99,9 +96,15 @@ class Market3DFolder(datasets.ImageFolder):
             obj[blank_point, 3:] = 0.5 # reset to 0.5
             return_point = round(v_num*self.slim)
             if return_point<=len(not_blank_point): 
-                in_selected = np.linspace(0, len(not_blank_point)-1, num= return_point, dtype=int)
+                if 'train' in self.root and random.random() < 0.5: 
+                # random select points 
+                    in_selected = np.random.permutation(len(not_blank_point)-1)[:return_point]
+                else:
+                # linear select points 
+                    in_selected = np.linspace(0, len(not_blank_point)-1, num= return_point, dtype=int)
                 selected = not_blank_point[in_selected]
             else: 
+                # all the color inputs with some blank points
                 out_selected = np.linspace(0, len(blank_point)-1, num= return_point-len(not_blank_point), dtype=int)
                 selected = np.concatenate( (not_blank_point, blank_point[out_selected]) )
             selected = np.sort(selected.squeeze())
