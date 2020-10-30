@@ -8,7 +8,7 @@
 Thanks for your attention. In this repo, we provide the code for the paper [[Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
 
 ## News
-- 30 Oct 2020. I simply modify code on three points to further improve the performance: 
+- **30 Oct 2020.** I simply modify code on three points to further improve the performance: 
 
 1. More training epochs work; (Since we are trained from scratch)
 
