@@ -12,7 +12,7 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Per
 
 1. More training epochs work; (Since we are trained from scratch)
 
-2. I replace the dgl to more efficient KNN to accelebrate training; (DGL does not optimize KNN very well, and Matrix Multiplation works quicker. ) 
+2. I replace the dgl to more efficient KNN to accelebrate training; (DGL does not optimize KNN very well, and Matrix Multiplication works quicker. ) 
 
 3. For MSMT-17 and Duke, some class contains too much images, while other category is under-explored. I use the stratified sampling to take training samples of each class with equal probability.
 
