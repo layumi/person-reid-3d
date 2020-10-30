@@ -10,11 +10,11 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Per
 ## News
 - **30 Oct 2020.** I simply modify code on three points to further improve the performance: 
 
-1. More training epochs work; (Since we are trained from scratch)
+1. More training epochs help; (Since we are trained from scratch)
 
-2. I replace the dgl to more efficient KNN to accelebrate training; (DGL does not optimize KNN very well, and Matrix Multiplication works quicker. ) 
+2. I replace the dgl to more efficient KNN implementation to accelebrate training; (DGL does not optimize KNN very well, and Matrix Multiplication works quicker. ) 
 
-3. For MSMT-17 and Duke, some class contains too much images, while other category is under-explored. I use the stratified sampling to take training samples of each class with equal probability.
+3. For MSMT-17 and Duke, some classes contain too many images, while other categories are under-explored. I apply the stratified sampling, which takes training samples of each class with equal probability.
 
 - You may directly download my generated 3D data of the Market-1501 dataset at [[OneDrive]](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EQXEskhdd3xPjdFRxAUtB9cB7RkjAdzS5YXRH8QIf_TWAw?e=IhqNpi) or [[GoogleDrive]](https://drive.google.com/file/d/1ih-LrkdGUvNK3rEUNJIq4LTvcgVOXnnM/view?usp=sharing), and therefore you could skip the data preparation part.
 
