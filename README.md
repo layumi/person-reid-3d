@@ -63,33 +63,66 @@ Generate the 3D data via the code at https://github.com/layumi/hmr
 
 **OG-Net**
 ```bash
-python train_M.py --batch-size 8 --name ALL_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all
+python train_M.py --batch-size 16 --name Efficient_ALL_Dense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000 --slim 0.5 --flip --scale  --lrRate 4e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 64,128,256,512   --efficient
 ```
 **OG-Net-Small**
 ```bash
-python train_M.py --batch-size 8 --name ALL_SDense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all     --feature_dims 48,96,192,384
+python train_M.py --batch-size 16 --name Efficient_ALL_SDense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000 --slim 0.5 --flip --scale  --lrRate 4e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,192,384   --efficient 
+```
+
+**OG-Net-Deep**
+```bash
+python train_M.py --batch-size 16 --name Efficient_ALL_2SDDense_b16_lr3.5_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e500_id2_bn_k9_conv2  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 500  --feature_dims 48,96,96,192,192,384,384  --norm_layer bn --efficient --k 9  --num_conv 2
 ```
 
 - DukeMTMC-reID
 
 **OG-Net**
 ```bash
-python train_M.py --batch-size 8 --name ALL_Duke_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --dataset-path 2DDuke  --train_all
+python train_M.py --batch-size 16 --name Efficient_Duke_ALL_Dense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_balance --slim 0.5 --flip --scale  --lrRate 4e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 64,128,256,512   --efficient --dataset 2DDuke --balance
 ```
+
 **OG-Net-Small**
 ```bash
-python train_M.py --batch-size 8 --name ALL_Duke_SDense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all    --feature_dims 48,96,192,384 --dataset-path 2DDuke
+python train_M.py --batch-size 16 --name Efficient_Duke_ALL_SDense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000 --slim 0.5 --flip --scale  --lrRate 4e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,192,384   --efficient --dataset 2DDuke
+```
+
+**OG-Net-Deep**
+```bash
+python train_M.py --batch-size 16 --name Duke_Efficient_ALL_2SDDense_b16_lr3.5_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --norm_layer bn --efficient --k 9  --num_conv 2  --dataset 2DDuke --balance
+```
+
+- CUHK-NP 
+**OG-Net**
+```bash
+python train_M.py --batch-size 16 --name Efficient_CUHK_ALL_Dense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000 --slim 0.5 --flip --scale  --lrRate 4e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 64,128,256,512   --efficient --dataset 2DCUHK
+```
+
+**OG-Net-Small**
+```bash
+python train_M.py --batch-size 16 --name Efficient_CUHK_ALL_SDense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000 --slim 0.5 --flip --scale  --lrRate 4e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,192,384    --efficient --dataset 2DCUHK
+```
+
+**OG-Net-Deep**
+```bash
+python train_M.py --batch-size 32 --name CUHK_Efficient_ALL_2SDDense_b32_lr3_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 3e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --norm_layer bn --efficient --k 9  --num_conv 2  --dataset 2DCUHK
 ```
 
 - MSMT-17
 
 **OG-Net**
 ```bash
-python train_M.py --batch-size 8 --name MSMT_Dense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d7+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --dataset-path 2DMSMT
+python train_M.py --batch-size 16 --name Efficient_MSMT_ALL_Dense_b16_lr3_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e800_wa0.9_balance --slim 0.5 --flip --scale  --lrRate 3e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 800  --feature_dims 64,128,256,512    --efficient --dataset 2DMSMT  --id_skip 0  --wa --wa_start 0.9 --balance
 ```
+
 **OG-Net-Small**
 ```bash
-python train_M.py --batch-size 8 --name ALL_MSMT_SDense_b8_lr3.5_flip_slim0.5_warm5_scale_e0_d5+bg_adam_init768_clusterXYZRGB --slim 0.5 --flip --scale  --lrRate 3.5e-4 --gpu_ids 0 --warm_epoch 5  --erase 0  --droprate 0.5   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --dataset-path 2DMSMT  --train_all  --feature_dims 48,96,192,384
+python train_M.py --batch-size 16 --name Data_Efficient_MSMT_ALL_SDense_b16_lr3_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_balance --slim 0.5 --flip --scale --lrRate 3e-4 --gpu_ids 0 --warm_epoch 10 --erase 0 --droprate 0.7 --use_dense --bg --adam --init 768 --cluster xyzrgb --train_all --num-epoch 1000 --feature_dims 48,96,192,384 --efficient --dataset 2DMSMT --id_skip 0 --balance
+```
+
+**OG-Net-Deep**
+```bash
+python train_M.py --batch-size 32 --name MSMT_Efficient_ALL_2SDDense_b32_lr3_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 3e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --norm_layer bn --efficient --k 9  --num_conv 2  --dataset 2DMSMT --balance
 ```
 
 ## Evaluation
