@@ -5,7 +5,7 @@
 
 ![](https://github.com/layumi/person-reid-3d/blob/master/imgs/demo-1.jpg)
 
-Thanks for your attention. In this repo, we provide the code for the paper [[Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
+Thanks for your attention. In this repo, we provide the code for the paper [[Parameter-Efficient Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
 
 ## News
 - **30 Oct 2020.** I simply modify code on three points to further improve the performance: 
@@ -161,7 +161,7 @@ Results on ModelNet are 93.3 Top1 Accuracy / 90.5 MeanClass Top1 Accuracy.
 You may cite it in your paper. Thanks a lot.
 ```bibtex
 @article{zheng2020person,
-  title={Person Re-identification in the 3D Space},
+  title={Parameter-Efficient Person Re-identification in the 3D Space},
   author={Zhedong Zheng, Yi Yang},
   journal={arXiv 2006.04569},
   year={2020}
