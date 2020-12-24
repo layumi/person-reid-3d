@@ -17,6 +17,20 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Par
 3. For MSMT-17 and Duke, some classes contain too many images, while other categories are under-explored. I apply the stratified sampling, which takes training samples of each class with equal probability.
 
 - You may directly download my generated 3D data of the Market-1501 dataset at [[OneDrive]](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EQXEskhdd3xPjdFRxAUtB9cB7RkjAdzS5YXRH8QIf_TWAw?e=IhqNpi) or [[GoogleDrive]](https://drive.google.com/file/d/1ih-LrkdGUvNK3rEUNJIq4LTvcgVOXnnM/view?usp=sharing), and therefore you could skip the data preparation part.
+Just put the datasets in the same folder of the code.
+```
+├── 2DMarket\
+│   ├── query/  
+│   ├── train_all/
+│   ├── ...
+├── 3DMarket+bg\
+│   ├── query/  
+│   ├── train_all/
+│   ├── ...
+├── train.py
+├── test.py 
+├── ...
+```
 
 ## Prerequisites
 - Python 3.6 or 3.7
