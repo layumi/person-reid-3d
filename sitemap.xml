@@ -1,0 +1,2502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://github.com/layumi/person-reid-3d</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/issues</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/pulls</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/actions</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/projects</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/security</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/find/master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/46004576f9674a53465fe164b30a98c261523fd5</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/4992ca054c36e95b7a758aaae855b6e332839e09</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/6f44155af4c8111eb9d38861c724edc7636bc649</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/54cd6839070058f825f003a7667f506acf7ac4e3</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/DGCNN.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/KNNGraphE.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/d985daad36d35357fbf6e21fcf736d3ed972c82d</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/18fba1ef0e54c715c323c076182a0b6da57435b4</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/evaluate_gpu.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/d050dca8df2ab51d6851393c67f4e05553eea344</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/gated_gcn_layer.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/market3d.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/02d66e312d32ae3164a1f0eac36c94ff82937f95</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/model_efficient.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/model_efficient2.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/pointnet2_model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/prepare_MSMT.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/09c180e732e752c143bad1c859b704819c21fd9c</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/prepare_duke.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9596d9170ad69d34604396c328217d46ec9b52f7</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/prepare_market.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9eb6b2a962d6df991fb78d68fe4f405373ab9ecc</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/ptflops.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/requirements.txt</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/63b6b3188a79c6d3f98a29576b8fc7eaf2ed5427</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/swa_utils.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/e9183814dc82d7145ea7b2a469114e6e065d44a7</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/test_M.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/test_MSMT.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/test_P.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/test_vip.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/train_M.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/master/utils.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/issues/9</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/issues/8</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/issues/7</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/issues/2</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/compare</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/security/policy</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/security/advisories</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/46004576f9674a53465fe164b30a98c261523fd5?branch=46004576f9674a53465fe164b30a98c261523fd5&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/46004576f9674a53465fe164b30a98c261523fd5?branch=46004576f9674a53465fe164b30a98c261523fd5&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/44ff0f20723b767378344da9c5d88304cf8dce3a</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/4992ca054c36e95b7a758aaae855b6e332839e09?branch=4992ca054c36e95b7a758aaae855b6e332839e09&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/4992ca054c36e95b7a758aaae855b6e332839e09?branch=4992ca054c36e95b7a758aaae855b6e332839e09&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/1389fe8379cc7dcf32dfdb82d6c7f33c95657ba2</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/6f44155af4c8111eb9d38861c724edc7636bc649?branch=6f44155af4c8111eb9d38861c724edc7636bc649&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/6f44155af4c8111eb9d38861c724edc7636bc649?branch=6f44155af4c8111eb9d38861c724edc7636bc649&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/2740ac19e257d6e9b044cc7cd0effbf8c4b672d6</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/54cd6839070058f825f003a7667f506acf7ac4e3?branch=54cd6839070058f825f003a7667f506acf7ac4e3&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/54cd6839070058f825f003a7667f506acf7ac4e3?branch=54cd6839070058f825f003a7667f506acf7ac4e3&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/DGCNN.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/KNNGraphE.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/30a07edfd48ad1262198d08669055de94ca3ec5c</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/d985daad36d35357fbf6e21fcf736d3ed972c82d?branch=d985daad36d35357fbf6e21fcf736d3ed972c82d&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/d985daad36d35357fbf6e21fcf736d3ed972c82d?branch=d985daad36d35357fbf6e21fcf736d3ed972c82d&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/18fba1ef0e54c715c323c076182a0b6da57435b4?branch=18fba1ef0e54c715c323c076182a0b6da57435b4&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/18fba1ef0e54c715c323c076182a0b6da57435b4?branch=18fba1ef0e54c715c323c076182a0b6da57435b4&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/evaluate_gpu.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/38642830b23f93e32784fbab0b2af9875a4b6b5f</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/d050dca8df2ab51d6851393c67f4e05553eea344?branch=d050dca8df2ab51d6851393c67f4e05553eea344&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/d050dca8df2ab51d6851393c67f4e05553eea344?branch=d050dca8df2ab51d6851393c67f4e05553eea344&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/gated_gcn_layer.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/market3d.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/37ec7270ec3c44089a21600d65a4b253025c8873</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/02d66e312d32ae3164a1f0eac36c94ff82937f95?branch=02d66e312d32ae3164a1f0eac36c94ff82937f95&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/02d66e312d32ae3164a1f0eac36c94ff82937f95?branch=02d66e312d32ae3164a1f0eac36c94ff82937f95&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/model_efficient.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/model_efficient2.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/pointnet2_model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/prepare_MSMT.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/09c180e732e752c143bad1c859b704819c21fd9c?branch=09c180e732e752c143bad1c859b704819c21fd9c&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/09c180e732e752c143bad1c859b704819c21fd9c?branch=09c180e732e752c143bad1c859b704819c21fd9c&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/prepare_duke.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/a41c79ca0452c75fb99dfc4354f49920d6ed8365</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9596d9170ad69d34604396c328217d46ec9b52f7?branch=9596d9170ad69d34604396c328217d46ec9b52f7&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9596d9170ad69d34604396c328217d46ec9b52f7?branch=9596d9170ad69d34604396c328217d46ec9b52f7&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/prepare_market.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9e3b08cdc53137dc5e09df813ea09192f08a0de3</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9eb6b2a962d6df991fb78d68fe4f405373ab9ecc?branch=9eb6b2a962d6df991fb78d68fe4f405373ab9ecc&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9eb6b2a962d6df991fb78d68fe4f405373ab9ecc?branch=9eb6b2a962d6df991fb78d68fe4f405373ab9ecc&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/ptflops.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/e4cbf698886a3189ee73e47d208bf9b68caee367</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/63b6b3188a79c6d3f98a29576b8fc7eaf2ed5427?branch=63b6b3188a79c6d3f98a29576b8fc7eaf2ed5427&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/63b6b3188a79c6d3f98a29576b8fc7eaf2ed5427?branch=63b6b3188a79c6d3f98a29576b8fc7eaf2ed5427&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/swa_utils.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/dadfaf501a47c0911d1dea6f55388c866a58718b</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/e9183814dc82d7145ea7b2a469114e6e065d44a7?branch=e9183814dc82d7145ea7b2a469114e6e065d44a7&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/e9183814dc82d7145ea7b2a469114e6e065d44a7?branch=e9183814dc82d7145ea7b2a469114e6e065d44a7&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/test_M.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/test_MSMT.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/test_P.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/test_vip.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/train_M.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/blob/46004576f9674a53465fe164b30a98c261523fd5/utils.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/pulls</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/actions</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/projects</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/security</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/find/master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/login?return_to=https%3A%2F%2Fgithub.com%2Flayumi%2Fhmr%2Fpull%2Fnew%2Fmaster</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/akanazawa/hmr/compare/master...layumi:master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/.gitignore</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/__init__.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/demo.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/demo_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/demo_market.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/do_train.sh</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DCUHK_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DDuke.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DDuke_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DMSMT_aligned.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DMSMT_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DMSMT_bg2.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DMarket.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DMarket_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/generate_3DVIP_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/prepare_datasets.sh</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/master/requirements.txt</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/pulls</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/actions</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/projects</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/security</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/find/master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/login?return_to=https%3A%2F%2Fgithub.com%2Flayumi%2Fdgcnn%2Fpull%2Fnew%2Fmaster</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/WangYueFt/dgcnn/compare/master...layumi:master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/.gitignore</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/tree/master/tensorflow</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/tree/master/pytorch</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/pulls</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/actions</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/projects</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/security</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/find/master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/2c97228bd396e9b74887eeeca565d5d712b0fc37</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/f02a01f902a0df5de064d440e18e3674f77966fc</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e4d1b66cf611fc2aae53b398a5f02fa22389916a</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/3065c3a157c852b6b03aaf3193003d37d5d75c00</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/211752580b6fce638baf04f7681e69de6f50001c</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/.gitignore</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/9cfde137ee8061b60084531c859580b7b8bdff15</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/.travis.yml</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/6cbc2e6de7dbea526b23380c691938a9350a6b71</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/93ff4bf73a751e501f04a27955d15d643e38d413</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/2518daf0f6f7e194ee081349c29d02a8a86edece</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/circle_loss.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e9613bb1f814aafb8702d0ae5f9e16d6c466d52a</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/demo.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/629f1ca9ef22b297f3f1c3f03476d10dbac5f349</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/evaluate.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/7f8c3c1cb94d45e1b3a0014c3bd2bb58e7f6f9b9</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/evaluate_gpu.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/evaluate_rerank.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/a112bd746ced1f9dd43f7ca5b6eb1aaa214808ab</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/f5aa37f53b4a85fc728bf776114b9807a57efe5f</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/prepare.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/d3d8d84162add989496e208af4a3bb7c8c2faf37</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/prepare_static.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e9cc9a1eb25690b5582346e8797445d860c9f5ba</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/prepare_viper.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/394db7b4ef0a2801be7b7c5bb6df022498461296</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/random_erasing.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/re_ranking.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/63bff64ef182f5737b58c7fa165641a22cd22ef8</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/abac99ce450faca6966c065a934f861990291566</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/test.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/10c515887abc84b1ece01f8227c4b7ef8b5b96c4</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/train.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/a17698464d255d9c451bf70fa52a990fa402ffda</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/dev/visual_heatmap.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/tree/master/GPU-Re-Ranking</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/107</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/2016_person_re-ID</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person-reID_GAN</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Image-Text-Embedding</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/find/46004576f9674a53465fe164b30a98c261523fd5</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels?sort=name-asc</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels?sort=name-desc</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels?sort=count-desc</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels?sort=count-asc</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/bug</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/documentation</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/duplicate</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/enhancement</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/good%20first%20issue</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/help%20wanted</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/invalid</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/question</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/labels/wontfix</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?state=closed</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?direction=desc&amp;sort=due_date&amp;state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?direction=asc&amp;sort=due_date&amp;state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?direction=asc&amp;sort=completeness&amp;state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?direction=desc&amp;sort=completeness&amp;state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?direction=asc&amp;sort=title&amp;state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?direction=desc&amp;sort=title&amp;state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?direction=desc&amp;sort=count&amp;state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/milestones?direction=asc&amp;sort=count&amp;state=open</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/security/advisories?state=published</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/e226725dc5717ffb321e2d151fa031bdbe2de23d</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/44ff0f20723b767378344da9c5d88304cf8dce3a?branch=44ff0f20723b767378344da9c5d88304cf8dce3a&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/44ff0f20723b767378344da9c5d88304cf8dce3a?branch=44ff0f20723b767378344da9c5d88304cf8dce3a&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/22c767f8073635a7a62f88469beb9c60dc31a5c9</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/1389fe8379cc7dcf32dfdb82d6c7f33c95657ba2?branch=1389fe8379cc7dcf32dfdb82d6c7f33c95657ba2&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/1389fe8379cc7dcf32dfdb82d6c7f33c95657ba2?branch=1389fe8379cc7dcf32dfdb82d6c7f33c95657ba2&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/7af1f5998d86d115082c4efb2669f473fae8dc25</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/2740ac19e257d6e9b044cc7cd0effbf8c4b672d6?branch=2740ac19e257d6e9b044cc7cd0effbf8c4b672d6&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/2740ac19e257d6e9b044cc7cd0effbf8c4b672d6?branch=2740ac19e257d6e9b044cc7cd0effbf8c4b672d6&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/30a07edfd48ad1262198d08669055de94ca3ec5c?branch=30a07edfd48ad1262198d08669055de94ca3ec5c&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/30a07edfd48ad1262198d08669055de94ca3ec5c?branch=30a07edfd48ad1262198d08669055de94ca3ec5c&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/d0f41a5cb85008a6bb58986804b759c1e0d2a18b</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/38642830b23f93e32784fbab0b2af9875a4b6b5f?branch=38642830b23f93e32784fbab0b2af9875a4b6b5f&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/38642830b23f93e32784fbab0b2af9875a4b6b5f?branch=38642830b23f93e32784fbab0b2af9875a4b6b5f&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/6003b9a0027fce021b1b5667bd6ce4c55efa9bd1</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/37ec7270ec3c44089a21600d65a4b253025c8873?branch=37ec7270ec3c44089a21600d65a4b253025c8873&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/37ec7270ec3c44089a21600d65a4b253025c8873?branch=37ec7270ec3c44089a21600d65a4b253025c8873&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/6374d735765005eeeece71d9479288b2669e6df9</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/a41c79ca0452c75fb99dfc4354f49920d6ed8365?branch=a41c79ca0452c75fb99dfc4354f49920d6ed8365&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/a41c79ca0452c75fb99dfc4354f49920d6ed8365?branch=a41c79ca0452c75fb99dfc4354f49920d6ed8365&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/b55e0a81539464d38ddf4136ae636e6a4c0309d1</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9e3b08cdc53137dc5e09df813ea09192f08a0de3?branch=9e3b08cdc53137dc5e09df813ea09192f08a0de3&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/9e3b08cdc53137dc5e09df813ea09192f08a0de3?branch=9e3b08cdc53137dc5e09df813ea09192f08a0de3&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/a0821b1df8649300d877c234f8b3539a130af281</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/e4cbf698886a3189ee73e47d208bf9b68caee367?branch=e4cbf698886a3189ee73e47d208bf9b68caee367&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/e4cbf698886a3189ee73e47d208bf9b68caee367?branch=e4cbf698886a3189ee73e47d208bf9b68caee367&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/b6931e0de69fad06dac0d07461d7557e0d56e2a4</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/dadfaf501a47c0911d1dea6f55388c866a58718b?branch=dadfaf501a47c0911d1dea6f55388c866a58718b&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/person-reid-3d/commit/dadfaf501a47c0911d1dea6f55388c866a58718b?branch=dadfaf501a47c0911d1dea6f55388c866a58718b&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/labels</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/milestones</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/security/policy</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/security/advisories</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/.gitignore</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/__init__.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/demo.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/demo_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/demo_market.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/do_train.sh</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DCUHK_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DDuke.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DDuke_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DMSMT_aligned.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DMSMT_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DMSMT_bg2.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DMarket.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DMarket_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/generate_3DVIP_bg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/hmr/blob/181eb0f5fb3033e101a151ff2b5978ff938ede05/prepare_datasets.sh</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/labels</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/milestones</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/security/policy</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/security/advisories</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/ecaef11dcb46246ae69514b553a34c64c59e71f6/.gitignore</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/ecaef11dcb46246ae69514b553a34c64c59e71f6/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/tensorflow/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/tensorflow/evaluate.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/tensorflow/provider.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/tensorflow/train.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/KNNGraphE.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/OGNet.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/data.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/gated_gcn_layer.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/main_cls.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/main_partseg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/main_semseg.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/model_efficient.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/pointnet2_model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/ptflops.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/util.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/dgcnn/blob/master/pytorch/utils.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/labels</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/milestones</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/259</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/258</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/257</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/256</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/254</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/253</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/248</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/246</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/245</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/243</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/242</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/241</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/240</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/239</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/238</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/237</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/236</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/234</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/233</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/232</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/231</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/230</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/226</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/225</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/224</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/compare</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/pull/244</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/security/policy</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/security/advisories</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/2c97228bd396e9b74887eeeca565d5d712b0fc37?branch=2c97228bd396e9b74887eeeca565d5d712b0fc37&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/2c97228bd396e9b74887eeeca565d5d712b0fc37?branch=2c97228bd396e9b74887eeeca565d5d712b0fc37&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/f02a01f902a0df5de064d440e18e3674f77966fc?branch=f02a01f902a0df5de064d440e18e3674f77966fc&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/f02a01f902a0df5de064d440e18e3674f77966fc?branch=f02a01f902a0df5de064d440e18e3674f77966fc&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/c346969a9f8c7e8ef2fb4cf50ec149cb450eeeb6</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e4d1b66cf611fc2aae53b398a5f02fa22389916a?branch=e4d1b66cf611fc2aae53b398a5f02fa22389916a&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e4d1b66cf611fc2aae53b398a5f02fa22389916a?branch=e4d1b66cf611fc2aae53b398a5f02fa22389916a&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/4924e16bf8f3f0f0e0f2da4853d31968262a260b</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/3065c3a157c852b6b03aaf3193003d37d5d75c00?branch=3065c3a157c852b6b03aaf3193003d37d5d75c00&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/3065c3a157c852b6b03aaf3193003d37d5d75c00?branch=3065c3a157c852b6b03aaf3193003d37d5d75c00&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/76cadb8b32332ac19611d748780dbcb426792bdf</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/211752580b6fce638baf04f7681e69de6f50001c?branch=211752580b6fce638baf04f7681e69de6f50001c&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/211752580b6fce638baf04f7681e69de6f50001c?branch=211752580b6fce638baf04f7681e69de6f50001c&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/.gitignore</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/ba979ab1888799e79fa8684427865a1813334066</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/9cfde137ee8061b60084531c859580b7b8bdff15?branch=9cfde137ee8061b60084531c859580b7b8bdff15&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/9cfde137ee8061b60084531c859580b7b8bdff15?branch=9cfde137ee8061b60084531c859580b7b8bdff15&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/.travis.yml</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/ea4b65ef3214eb5e845b5771d4d452753d18b44a</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/6cbc2e6de7dbea526b23380c691938a9350a6b71?branch=6cbc2e6de7dbea526b23380c691938a9350a6b71&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/6cbc2e6de7dbea526b23380c691938a9350a6b71?branch=6cbc2e6de7dbea526b23380c691938a9350a6b71&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/1bea13e2739777b8f0510eec99460bd988689ed9</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/93ff4bf73a751e501f04a27955d15d643e38d413?branch=93ff4bf73a751e501f04a27955d15d643e38d413&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/93ff4bf73a751e501f04a27955d15d643e38d413?branch=93ff4bf73a751e501f04a27955d15d643e38d413&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/77a10a2c88fade1272e52f4666e51ca31225d5de</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/2518daf0f6f7e194ee081349c29d02a8a86edece?branch=2518daf0f6f7e194ee081349c29d02a8a86edece&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/2518daf0f6f7e194ee081349c29d02a8a86edece?branch=2518daf0f6f7e194ee081349c29d02a8a86edece&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/circle_loss.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e9613bb1f814aafb8702d0ae5f9e16d6c466d52a?branch=e9613bb1f814aafb8702d0ae5f9e16d6c466d52a&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e9613bb1f814aafb8702d0ae5f9e16d6c466d52a?branch=e9613bb1f814aafb8702d0ae5f9e16d6c466d52a&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/demo.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/2d5b5b9d3901e61e85fe4295a76b52134808c5bb</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/629f1ca9ef22b297f3f1c3f03476d10dbac5f349?branch=629f1ca9ef22b297f3f1c3f03476d10dbac5f349&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/629f1ca9ef22b297f3f1c3f03476d10dbac5f349?branch=629f1ca9ef22b297f3f1c3f03476d10dbac5f349&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/evaluate.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/cc35dcbd19f6cdc1f37c681b57701ee1c98119b4</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/7f8c3c1cb94d45e1b3a0014c3bd2bb58e7f6f9b9?branch=7f8c3c1cb94d45e1b3a0014c3bd2bb58e7f6f9b9&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/7f8c3c1cb94d45e1b3a0014c3bd2bb58e7f6f9b9?branch=7f8c3c1cb94d45e1b3a0014c3bd2bb58e7f6f9b9&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/evaluate_gpu.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/evaluate_rerank.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/ad8c84d44b43c324a7f5c388bec11c102ab03407</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/a112bd746ced1f9dd43f7ca5b6eb1aaa214808ab?branch=a112bd746ced1f9dd43f7ca5b6eb1aaa214808ab&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/a112bd746ced1f9dd43f7ca5b6eb1aaa214808ab?branch=a112bd746ced1f9dd43f7ca5b6eb1aaa214808ab&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/0cd1d712a635c625c543a0b456391fb383ea76ec</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/f5aa37f53b4a85fc728bf776114b9807a57efe5f?branch=f5aa37f53b4a85fc728bf776114b9807a57efe5f&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/f5aa37f53b4a85fc728bf776114b9807a57efe5f?branch=f5aa37f53b4a85fc728bf776114b9807a57efe5f&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/prepare.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e11c9248321c0fb311d40575057abffa1224de9f</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/d3d8d84162add989496e208af4a3bb7c8c2faf37?branch=d3d8d84162add989496e208af4a3bb7c8c2faf37&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/d3d8d84162add989496e208af4a3bb7c8c2faf37?branch=d3d8d84162add989496e208af4a3bb7c8c2faf37&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/prepare_static.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/f0475048d6d59fa83e9d7319b222c6af17822b37</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e9cc9a1eb25690b5582346e8797445d860c9f5ba?branch=e9cc9a1eb25690b5582346e8797445d860c9f5ba&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/e9cc9a1eb25690b5582346e8797445d860c9f5ba?branch=e9cc9a1eb25690b5582346e8797445d860c9f5ba&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/prepare_viper.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/f37bde8a86c859e9f9a57f388bba005f65bcfaa2</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/394db7b4ef0a2801be7b7c5bb6df022498461296?branch=394db7b4ef0a2801be7b7c5bb6df022498461296&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/394db7b4ef0a2801be7b7c5bb6df022498461296?branch=394db7b4ef0a2801be7b7c5bb6df022498461296&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/random_erasing.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/re_ranking.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/104</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/a253943e16abd94277ee832a950b975df75b11e3</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/63bff64ef182f5737b58c7fa165641a22cd22ef8?branch=63bff64ef182f5737b58c7fa165641a22cd22ef8&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/63bff64ef182f5737b58c7fa165641a22cd22ef8?branch=63bff64ef182f5737b58c7fa165641a22cd22ef8&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/b24b82c946187124196c68bcb50ff6e16b6000be</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/abac99ce450faca6966c065a934f861990291566?branch=abac99ce450faca6966c065a934f861990291566&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/abac99ce450faca6966c065a934f861990291566?branch=abac99ce450faca6966c065a934f861990291566&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/test.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/4856c8e109003f10aafb43608cfa544607586ff2</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/10c515887abc84b1ece01f8227c4b7ef8b5b96c4?branch=10c515887abc84b1ece01f8227c4b7ef8b5b96c4&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/10c515887abc84b1ece01f8227c4b7ef8b5b96c4?branch=10c515887abc84b1ece01f8227c4b7ef8b5b96c4&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/2c97228bd396e9b74887eeeca565d5d712b0fc37/train.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/9a649c21448203d893a5edee01fc6a3172af3cc6</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/a17698464d255d9c451bf70fa52a990fa402ffda?branch=a17698464d255d9c451bf70fa52a990fa402ffda&amp;diff=unified</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/a17698464d255d9c451bf70fa52a990fa402ffda?branch=a17698464d255d9c451bf70fa52a990fa402ffda&amp;diff=split</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/36fd6dc247650efb2c3b67679546656615232aa6/visual_heatmap.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/find/dev</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/issues</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/pulls</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/actions</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/projects</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/security</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/find/master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/blob/master/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/blob/master/gpu_compile.m</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/blob/master/prepare_data.m</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/blob/master/resnet52_market_2.m</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_matconvnet/blob/master/train_id_net_res_market_baseline.m</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/GPU-Re-Ranking/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/GPU-Re-Ranking/evaluate_rerank_gpu.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/94e3c7fd42466816b6c5c49cc83214aa20ecd008</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/GPU-Re-Ranking/gnn_reranking.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/a8737ded2dfe3eb29e7c1afa64d41e7bffca0af3</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/blob/master/GPU-Re-Ranking/utils.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/commit/93bc1a12b9b9ca0a23f5e98739373ed35f693e64</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/blob/master/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/issues</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/pulls</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/actions</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/projects</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/security</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/find/master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/commit/bbeacd8778b7c7b09018a82e59d8831358e7f39f</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/commit/96dc0e52177ab67fabb73424cdaebde5f6b6c76e</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/commit/745cf74bef1baa54c8fe2de4f649566e73e418f8</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/commit/13bd3d0040ea579686ff4e5e029067caefde38fd</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/blob/master/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/commit/d5d968fc1d5529df6899bc00cb996b667a9d5543</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/blob/master/paper.pdf</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/AICIty-reID-2020/commit/6df0a32ebb820d3a8151e47f5907ab888fa91442</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Vehicle_reID-Collection</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/issues</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/pulls</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/actions</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/projects</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/security</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/find/master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/commit/7d6c61135e33236acad2063f11d26203a39ff0e3</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/.gitignore</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/README.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/Request.md</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/autoaugment.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/demo.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/demo_4K.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/evaluate_gpu.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/gallery_name.txt</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/prepare_cvusa.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/prepare_limit_view.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/query_name.txt</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/random_erasing.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/show_data.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/test.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/test_4K.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/test_ImageNet.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/test_Place365.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/test_cvusa.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/test_train.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/train.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/train_18_sample.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/train_1_sample.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/train_27_sample.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/train_3_sample.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/train_9_sample.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/train_cvusa.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/train_no_street.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/blob/master/utils.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-Baseline/tree/master/GPU-Re-Ranking</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/cnnimageretrieval-pytorch/blob/master/cirtorch/examples/test_My1652model.py</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/University1652-triplet-loss</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Person_reID_baseline_pytorch/issues/142</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment/blob/master/LICENSE</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment/issues</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment/pulls</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment/actions</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment/projects</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment/security</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment/find/master</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/layumi/Pedestrian_Alignment/blob/master/.DS_Store</loc>
+  <lastmod>2021-03-21T05:44:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
