@@ -49,6 +49,13 @@ pip install -r requirements.txt
 ```
 
 If you face any error, you may first try to re-install open3d. It helps. 
+And make sure the gcc version is larger than 5.4.0. If you do not have the sudo permission, you may install gcc by conda as follows: 
+```
+conda install -c brown-data-science gcc          (which is gcc-5.4.0)
+gcc -v                                          (to see whether install is successful)
+ln libstdc++.so.6.0.26 libstdc++.so.6            (update lib in /anaconda3/env/OG/lib)
+conda install gxx_linux-64              
+```
 
 ## Prepare Data 
 - You may directly download my generated 3D data of the Market-1501 dataset at [[OneDrive]](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EQXEskhdd3xPjdFRxAUtB9cB7RkjAdzS5YXRH8QIf_TWAw?e=IhqNpi) or [[GoogleDrive]](https://drive.google.com/file/d/1ih-LrkdGUvNK3rEUNJIq4LTvcgVOXnnM/view?usp=sharing), and therefore you could skip the data preparation part.
