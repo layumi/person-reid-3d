@@ -54,7 +54,8 @@ And make sure the gcc version is larger than 5.4.0. If you do not have the sudo 
 conda install -c brown-data-science gcc          (which is gcc-5.4.0)
 gcc -v                                          (to see whether installation is successful)
 ln libstdc++.so.6.0.26 libstdc++.so.6            (update lib in /anaconda3/env/OG/lib)
-conda install gxx_linux-64              
+conda install gxx_linux-64
+conda install gcc_linux-64
 ```
 
 ## Prepare Data 
