@@ -44,6 +44,7 @@ Here I use the cuda10.1 by default.
 conda create --name OG python=3.7
 conda activate OG
 conda install pytorch=1.4.0 torchvision=0.5.0 cudatoolkit=10.1 -c pytorch
+conda install matplotlib requests
 conda install -c dglteam dgl-cuda10.1=0.4.3
 pip install -r requirements.txt
 ```
