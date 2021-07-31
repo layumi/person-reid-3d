@@ -187,7 +187,7 @@ You may cite it in your paper. Thanks a lot.
 ```bibtex
 @article{zheng2020person,
   title={Parameter-Efficient Person Re-identification in the 3D Space},
-  author={Zhedong Zheng, Yi Yang},
+  author={Zhedong Zheng, Nenggan Zheng, Yi Yang},
   journal={arXiv 2006.04569},
   year={2020}
 }
