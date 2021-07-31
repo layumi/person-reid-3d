@@ -8,6 +8,8 @@
 Thanks for your attention. In this repo, we provide the code for the paper [[Parameter-Efficient Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
 
 ## News
+- **31 Jul 2021.** Circle loss is added. For the fair comparison with circle loss, I re-train almost all the models with a bigger batch size. The results are updated in the latest arXiv version.
+ 
 - **30 Oct 2020.** I simply modify code on three points to further improve the performance: 
 
 1. More training epochs help; (Since we are trained from scratch)
