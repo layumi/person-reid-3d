@@ -10,8 +10,8 @@ GPU-Re-Ranking/extension/adjacency_matrix/dist
 GPU-Re-Ranking/extension/propagation/dist
 
 # But not 
-!snapshot/.gitkeep
-!snapshot/Efficient_ALL_Dense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000
+!snapshot/
+!imgs/
 
 # Compiled source #
 ###################

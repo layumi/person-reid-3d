@@ -181,55 +181,7 @@ python test_MSMT.py  --name MSMT_Efficient_ALL_2SDDense_b32_lr3_flip_slim0.5_war
 ## Pre-trained Models
 Since OG-Net is really small, I has included trained models in this github repo `./snapshot`. 
 
-### 1. Market
-OG-Net-Small:  `./snapshot/Efficient_ALL_SDense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e100`
-
-Rank@1:0.855701 Rank@5:0.949525 Rank@10:0.966746 mAP:0.665327 
-
-OG-Net: `./snapshot/Efficient_ALL_Dense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000`
-
-Rank@1:0.861936 Rank@5:0.953385 Rank@10:0.968527 mAP:0.680888 
-
-OG-Net-Deep: `./snapshot/Efficient_ALL_2SDDense_b16_lr3.5_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e500_id2_bn_k9_conv2`
-
-Rank@1:0.877375 Rank@5:0.956651 Rank@10:0.973278 mAP:0.695186
-
-### 2. CUHK 
-OG-Net-Small: `./snapshot/Efficient_CUHK_ALL_SDense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000` 
-
-Rank@1:0.381429 Rank@5:0.591429 Rank@10:0.696429 mAP:0.340316
-
-OG-Net:`./snapshot/Efficient_CUHK_ALL_Dense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000`
-
-Rank@1:0.399286 Rank@5:0.615714 Rank@10:0.705000 mAP:0.358765
-
-
-OG-Net-Deep:`./snapshot/CUHK_Efficient_ALL_2SDDense_b32_lr3_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2`
-
-Rank@1:0.446429 Rank@5:0.652857 Rank@10:0.733571 mAP:0.402752 
-
-### 3. Duke 
-
-OG-Net-Small:`Efficient_Duke_ALL_SDense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000`
-
-Rank@1:0.756733 Rank@5:0.860862 Rank@10:0.898564 mAP:0.557156
-
-OG-Net-Deep:`./snapshot/Duke_Efficient_ALL_2SDDense_b16_lr3.5_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance`
-
-Rank@1:0.766607 Rank@5:0.870736 Rank@10:0.897217 mAP:0.578870
-
-
-### 4. MSMT
-
-
-
-
-## Results
-### [Person Re-ID Performance]
-| Model name         | Market  | Duke | MSMT| 
-| ------------------ |---------------- | -------------- | -------------- |
-| OG-Net-Small |  85.90(66.93) |  75.67(55.72)     |   46.67(22.24)   | 
-| OG-Net   |    86.19(68.09)  |   76.93(57.20) |  47.82(22.82)    |
+If the model is trained on CUHK, Duke or MSMT, I will add dataset name in the model name, otherwise the model is trained on Market.
 
 ### [ModelNet Performance] 
 I add OG-Net code to https://github.com/layumi/dgcnn  
