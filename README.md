@@ -134,9 +134,14 @@ python train_M.py --batch-size 36 --name reEfficient_Duke_ALL_Dense_b36_lr10_fli
 python train_M.py --batch-size 36 --name reEfficient_Duke_ALL_Dense_b36_lr10_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_balance_GeM_bn2_circle_amsgrad_gamma64 --slim 0.5 --flip --scale  --lrRate 10e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 64,128,256,512   --efficient --dataset 2DDuke --balance --wa --wa_start 0.9 --gem --norm_layer bn2 --circle --amsgrad --gamma 64
 ```
 
-
-**OG-Net-Deep**
+**OG-Net-Deep** 76.97 (59.23)
 ```bash
+python train_M.py --batch-size 36 --name Duke_Efficient_ALL_2SDDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance_noCircle  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DDuke --balance --gem --norm_layer bn2 --amsgrad 
+```
+
+**OG-Net-Deep + Circle** 78.50 (60.7)
+```bash
+python train_M.py --batch-size 36 --name Duke_Efficient_ALL_2SDDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DDuke --balance --gem --norm_layer bn2 --circle --amsgrad --gamma 64
 ```
 
 - CUHK-NP 
@@ -161,9 +166,14 @@ python train_M.py --batch-size 36 --name Efficient_CUHK_ALL_SDense_b36_lr10_flip
 python train_M.py --batch-size 36 --name Efficient_CUHK_ALL_SDense_b36_lr8_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_balance_gem_bn2_circle_amsgrad_wd1e-3_gamma64 --slim 0.5 --flip --scale  --lrRate 8e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam   --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,192,384    --efficient --dataset 2DCUHK --balance --gem --norm_layer bn2 --circle --amsgrad --wd 1e-3 --gamma 64
 ```
 
-**OG-Net-Deep**
+**OG-Net-Deep** 45.71 (41.15)
 ```bash
-python train_M.py --batch-size 32 --name CUHK_Efficient_ALL_2SDDense_b32_lr3_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 3e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --norm_layer bn --efficient --k 9  --num_conv 2  --dataset 2DCUHK
+python train_M.py --batch-size 36 --name CUHK_Efficient_ALL_2SDDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1500_id2_bn_k9_conv2_class3_Nocircle  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1500  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DCUHK --class 3 --gem --norm_layer bn2 --amsgrad 
+```
+
+**OG-Net-Deep + Circle** 49.43 (45.71)
+```bash
+python train_M.py --batch-size 36 --name CUHK_Efficient_ALL_2SDDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1500_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1500  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DCUHK --balance --gem --norm_layer bn2 --circle --amsgrad --gamma 64
 ```
 
 - MSMT-17
@@ -188,10 +198,16 @@ python train_M.py --batch-size 36 --name reEfficient_MSMT_ALL_SDense_b36_lr6_fli
 python train_M.py --batch-size 36 --name reEfficient_MSMT_ALL_SDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e600_class_GeM_bn2_amsgrad --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 600  --feature_dims 48,96,192,384   --efficient --dataset 2DMSMT --class 1  --wa --wa_start 0.9 --gem --norm_layer bn2  --amsgrad 
 ```
 
-**OG-Net-Deep**
+**OG-Net-Deep** 44.56 (21.41) 
 ```bash
-python train_M.py --batch-size 32 --name MSMT_Efficient_ALL_2SDDense_b32_lr3_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 3e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --norm_layer bn --efficient --k 9  --num_conv 2  --dataset 2DMSMT --balance
+python train_M.py --batch-size 30 --name MSMT_Efficient_ALL_2SDDense_b30_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e600_id2_bn_k9_conv2_balance_nocircle  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 4e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 600  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DMSMT --balance --gem --norm_layer bn2 --amsgrad 
 ```
+
+**OG-Net-Deep + Circle** 47.32 (24.07)
+```bash
+python train_M.py --batch-size 30 --name MSMT_Efficient_ALL_2SDDense_b30_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e600_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 4e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 600  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DMSMT --balance --gem --norm_layer bn2 --circle --amsgrad --gamma 64
+```
+
 
 ## Evaluation
 - Market-1501
