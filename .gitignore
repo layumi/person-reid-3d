@@ -39,4 +39,3 @@ GPU-Re-Ranking/extension/propagation/dist
 *.jpg
 *.npy
 *.pt
-*.pth
