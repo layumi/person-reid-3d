@@ -91,7 +91,7 @@ Generate the 3D data via the code at https://github.com/layumi/hmr
 python train_M.py --batch-size 36 --name Efficient_ALL_Dense_b36_lr10_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1500_wa0.9_GeM_bn2_class3_amsgrad --slim 0.5 --flip --scale  --lrRate 10e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1500  --feature_dims 64,128,256,512   --efficient  --wa --wa_start 0.9 --gem --norm_layer bn2   --amsgrad --class 3
 ```
 
-**OG-Net + CircleLoss** 87.80 (70.56)
+**OG-Net + Circle** 87.80 (70.56)
 ```bash
 python train_M.py --batch-size 36 --name Efficient_ALL_Dense_b36_lr10_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1500_wa0.9_GeM_bn2_balance_circle_amsgrad_gamma64 --slim 0.5 --flip --scale  --lrRate 10e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1500  --feature_dims 64,128,256,512   --efficient  --wa --wa_start 0.9 --gem --norm_layer bn2 --balance  --circle --amsgrad --gamma 64
 ```
@@ -101,12 +101,12 @@ python train_M.py --batch-size 36 --name Efficient_ALL_Dense_b36_lr10_flip_slim0
 python train_M.py --batch-size 36 --name Efficient_ALL_SDense_b36_lr10_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_wa0.9_GeM_bn2_balance_amsgrad --slim 0.5 --flip --scale  --lrRate 10e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,192,384   --efficient  --wa --wa_start 0.9 --gem --norm_layer bn2 --balance  --amsgrad 
 ```
 
-**OG-Net-Small+Circle** 87.38 (70.48)
+**OG-Net-Small + Circle** 87.38 (70.48)
 ```bash
 python train_M.py --batch-size 36 --name Efficient_ALL_SDense_b36_lr10_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1500_wa0.9_GeM_bn2_balance_circle_amsgrad_gamma64 --slim 0.5 --flip --scale  --lrRate 10e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1500  --feature_dims 48,96,192,384   --efficient  --wa --wa_start 0.9 --gem --norm_layer bn2 --balance  --circle --amsgrad --gamma 64
 ```
 
-**OG-Net-Deep+Circle** 88.81 (72.91)
+**OG-Net-Deep + Circle** 88.81 (72.91)
 ```bash
 python train_M.py --batch-size 30 --name Market_Efficient_ALL_2SDDense_b30_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DMarket --balance --gem --norm_layer bn2 --circle --amsgrad --gamma 64
 ```
