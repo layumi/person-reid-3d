@@ -16,7 +16,7 @@ from KNNGraphE import KNNGraphE
 from dgl.nn.pytorch import KNNGraph, EdgeConv, GATConv, GraphConv, SAGEConv, SGConv, GatedGraphConv
 import math
 
-def get_model_complexity_info(model, input_res,
+def get_model_complexity_info(model, batch0, input_res,
                               print_per_layer_stat=True,
                               as_strings=True,
                               input_constructor=None, ost=sys.stdout,
@@ -33,6 +33,7 @@ def get_model_complexity_info(model, input_res,
         input = input_constructor(input_res)
         _ = flops_model(**input)
     else:
+        print('yes')
         try:
             batch = torch.rand(()).new_empty((1, *input_res),
                                              dtype=next(flops_model.parameters()).dtype,
@@ -41,7 +42,9 @@ def get_model_complexity_info(model, input_res,
             batch = torch.rand(()).new_empty((1, *input_res))
 
     # For OG-Net Two Inputs
-        _ = flops_model(batch, batch)
+    xyz = batch0[:,:,0:3].contiguous()
+    rgb = batch0[:,:,3:].contiguous()
+    _ = flops_model(xyz, rgb)
 
     flops_count, params_count = flops_model.compute_average_flops_cost()
     if print_per_layer_stat:
@@ -52,6 +55,7 @@ def get_model_complexity_info(model, input_res,
     if as_strings:
         return flops_to_string(flops_count), params_to_string(params_count)
 
+    del xyz, rgb, flops_model
     return flops_count, params_count
 
 
