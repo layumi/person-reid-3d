@@ -305,13 +305,15 @@ class ModelE_dense2(ModelE):
                  dropout_prob=0.5, npart=1, id_skip=False, drop_connect_rate=0, res_scale=1.0, 
                  light=False, bias = False, cluster='xyz', conv='EdgeConv', use_xyz=True, 
                  use_se=True, graph_jitter = False, pre_act = False, norm = 'bn', stride=2,
-                 layer_drop = 0, num_conv=1, shuffle=0):
+                 layer_drop = 0, num_conv=1, shuffle=0, temp = False):
         super().__init__(k, feature_dims, emb_dims, output_classes, init_points, input_dims, 
                  dropout_prob, npart, id_skip, drop_connect_rate, res_scale, 
                  light, bias, cluster, conv, use_xyz, use_se, graph_jitter, pre_act, norm, stride,
                  layer_drop, num_conv, shuffle)
         self.sa = nn.ModuleList()
         npoint = init_points
+        if temp: 
+            self.logit_scale = nn.Parameter(torch.ones(()), requires_grad = True)
         last_npoint = -1
         for i in range(len(feature_dims)):
             if i>0 and feature_dims[i]>feature_dims[i-1]:
