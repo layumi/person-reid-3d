@@ -63,26 +63,25 @@ conda install gcc_linux-64
 ```
 
 ## Prepare Data 
-- You may directly download my generated 3D data of the Market-1501 dataset at [[OneDrive]](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EQXEskhdd3xPjdFRxAUtB9cB7RkjAdzS5YXRH8QIf_TWAw?e=IhqNpi) or [[GoogleDrive]](https://drive.google.com/file/d/1ih-LrkdGUvNK3rEUNJIq4LTvcgVOXnnM/view?usp=sharing), and therefore you could skip the data preparation part.
+- **3D Part** You may directly download my generated 3D data of the Market-1501 dataset at [[OneDrive]](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EQXEskhdd3xPjdFRxAUtB9cB7RkjAdzS5YXRH8QIf_TWAw?e=IhqNpi) or [[GoogleDrive]](https://drive.google.com/file/d/1ih-LrkdGUvNK3rEUNJIq4LTvcgVOXnnM/view?usp=sharing), and therefore you could skip the data preparation part.
+ Or generate the 3D data via the code at https://github.com/layumi/hmr 
+(I modified the code from https://github.com/akanazawa/hmr and added 2D-to-3D color mapping.)
 
-Download Market-1501, DukeMTMC-reID or MSMT17 and unzip them in the `../`
+- **2D Part** Download Market-1501, DukeMTMC-reID or MSMT17 and unzip them in the `../`
 
-Split the dataset and arrange them in the folder of ID.
+Split the dataset and arrange them in the folder of ID by the following code.
 ```bash 
-python prepare_market.py
+python prepare_market.py # You may need to change the download path. 
 python prepare_duke.py
 python prepare_MSMT.py
 ```
 
-Link the 2DDataset 
+Link the 2DDataset to this dir.
 ```bash 
-ln -s ../Market/pytorch  ./2DMarket
-ln -s ../Duke/pytorch  ./2DDuke
-ln -s ../MSMT/pytorch  ./2DMSMT
+ln -s ../Your_Market/pytorch  ./2DMarket
+ln -s ../Your_Duke/pytorch  ./2DDuke
+ln -s ../Your_MSMT/pytorch  ./2DMSMT
 ```
-
-Generate the 3D data via the code at https://github.com/layumi/hmr 
-(I modified the code from https://github.com/akanazawa/hmr and added 2D-to-3D color mapping.)
 
 ## Training 
 - 1. Market-1501
