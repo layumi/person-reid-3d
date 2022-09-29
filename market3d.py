@@ -9,7 +9,7 @@ from torch.utils import data
 import dgl
 
 class Market3D(object):
-    def __init__(self, path, flip=False, slim=1.0, scale=False, norm=False, erase=0, rotate = False, channel=6, bg = False, D2 = False):
+    def __init__(self, path, flip=False, slim=1.0, scale=False, norm=False, erase=0, rotate = False, channel=6, bg = False, D2 = False, class_sampler = 0 ):
         self.path = path
         self.flip = flip
         self.slim = slim
@@ -20,12 +20,13 @@ class Market3D(object):
         self.channel = channel
         self.bg = bg
         self.D2 = D2
+        self.class_sampler = class_sampler
 
     def train(self):
-        return Market3DFolder(self.path +'/train', flip=self.flip, slim = self.slim, scale = self.scale, norm = self.norm, erase = self.erase, rotate=self.rotate, channel = self.channel, bg =self.bg, D2=self.D2)
+        return Market3DFolder(self.path +'/train', flip=self.flip, slim = self.slim, scale = self.scale, norm = self.norm, erase = self.erase, rotate=self.rotate, channel = self.channel, bg =self.bg, D2=self.D2, class_sampler = self.class_sampler)
 
     def train_all(self):
-        return Market3DFolder(self.path +'/train_all', flip=self.flip, slim = self.slim, scale = self.scale, norm = self.norm, erase = self.erase, rotate=self.rotate, channel = self.channel, bg =self.bg, D2=self.D2)
+        return Market3DFolder(self.path +'/train_all', flip=self.flip, slim = self.slim, scale = self.scale, norm = self.norm, erase = self.erase, rotate=self.rotate, channel = self.channel, bg =self.bg, D2=self.D2, class_sampler = self.class_sampler)
 
     def valid(self):
         return Market3DFolder(self.path+'/val', slim = self.slim, norm=self.norm, erase=0, channel = self.channel, bg=self.bg, D2 = self.D2)
@@ -54,11 +55,13 @@ class Market3D(object):
 
 
 class Market3DFolder(datasets.ImageFolder):
-    def __init__(self, root, flip=False, slim=1.0, scale = False, norm = False, erase=0, rotate=False, channel = 6, transform=None, bg = False, D2 = False):
+    def __init__(self, root, flip=False, slim=1.0, scale = False, norm = False, erase=0, rotate=False, channel = 6, transform=None, bg = False, D2 = False, class_sampler = 0):
         super(Market3DFolder, self).__init__(root, transform)
         targets = np.asarray([s[1] for s in self.samples])
-        if bg:
+        if bg==1:
             objs = [s[0].replace('2DMarket','3DMarket+bg').replace('2DDuke','3DDuke+bg').replace('2DMSMT','3DMSMT+bg').replace('2DCUHK','3DCUHK+bg').replace('2DVIP','3DVIP+bg')+'.obj' for s in self.samples]
+        elif bg ==2:
+            objs = [s[0].replace('2DMarket','3DMarket_ROMP').replace('2DDuke','3DDuke_ROMP').replace('2DMSMT','3DMSMT_ROMP').replace('2DCUHK','3DCUHK_ROMP').replace('2DVIP','3DVIP_ROMP')+'.obj' for s in self.samples]
         else:
             objs = [s[0].replace('2DMarket','3DMarket').replace('2DDuke','3DDuke').replace('2DMSMT','3DMSMT+bg').replace('2DCUHK','3DCUHK+bg').replace('2DVIP','3DVIP+bg')+'.obj' for s in self.samples]
 
@@ -76,8 +79,19 @@ class Market3DFolder(datasets.ImageFolder):
         self.img = self.samples
         self.root = root
         self.D2 = D2
+        self.class_sampler = class_sampler
+
+    def __len__(self):
+        if self.class_sampler:
+            return self.class_num * self.class_sampler
+        return self.img_num
 
     def __getitem__(self, index):
+        if self.class_sampler: # class index -> sample index
+            index = index % self.class_num
+            ava_index = np.argwhere(self.targets == index)
+            rand_index = np.random.permutation(len(ava_index))[0]
+            index = ava_index[rand_index][0]
         path, target = self.samples[index]
         path3d = self.objs[index]
         mesh = o3d.io.read_triangle_mesh(path3d)
