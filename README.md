@@ -8,6 +8,7 @@
 Thanks for your attention. In this repo, we provide the code for the paper [[Parameter-Efficient Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
 
 ## News
+- **29 Sep 2022.** I updated Circle loss, parameter count and the latest snapshots trained on 4 datasets, including Market, Duke, CUHK and MSMT, in `/snapshots`. You can directly test it after dataset preparing. 
 - **31 Jul 2021.** Circle loss is added. For the fair comparison with circle loss, I re-train almost all the models with a bigger batch size. The results are updated in the latest arXiv version.
  
 - **30 Oct 2020.** I simply modify code on three points to further improve the performance: 
@@ -84,7 +85,7 @@ Generate the 3D data via the code at https://github.com/layumi/hmr
 (I modified the code from https://github.com/akanazawa/hmr and added 2D-to-3D color mapping.)
 
 ## Training 
-- Market-1501
+- 1. Market-1501
 
 **OG-Net** 86.82 (69.02)
 ```bash
@@ -111,7 +112,7 @@ python train_M.py --batch-size 36 --name Efficient_ALL_SDense_b36_lr10_flip_slim
 python train_M.py --batch-size 30 --name Market_Efficient_ALL_2SDDense_b30_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DMarket --balance --gem --norm_layer bn2 --circle --amsgrad --gamma 64
 ```
 
-- DukeMTMC-reID
+- 2. DukeMTMC-reID
 
 **OG-Net-Small** 77.33 (57.74)
 ```bash
@@ -144,7 +145,7 @@ python train_M.py --batch-size 36 --name Duke_Efficient_ALL_2SDDense_b36_lr6_fli
 python train_M.py --batch-size 36 --name Duke_Efficient_ALL_2SDDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1000  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DDuke --balance --gem --norm_layer bn2 --circle --amsgrad --gamma 64
 ```
 
-- CUHK-NP 
+- 3. CUHK-NP 
 
 **OG-Net** 44.00 (39.28)
 ```bash
@@ -176,7 +177,7 @@ python train_M.py --batch-size 36 --name CUHK_Efficient_ALL_2SDDense_b36_lr6_fli
 python train_M.py --batch-size 36 --name CUHK_Efficient_ALL_2SDDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1500_id2_bn_k9_conv2_balance  --id_skip 2 --slim 0.5 --flip --scale  --lrRate 6e-4 --gpu_ids 0 --warm_epoch 10  --erase 0  --droprate 0.7   --use_dense  --bg   --adam  --init 768  --cluster xyzrgb  --train_all   --num-epoch 1500  --feature_dims 48,96,96,192,192,384,384  --efficient --k 9  --num_conv 2  --dataset 2DCUHK --balance --gem --norm_layer bn2 --circle --amsgrad --gamma 64
 ```
 
-- MSMT-17
+- 4. MSMT-17
 
 **OG-Net** 44.27 (21.57)
 ```bash
