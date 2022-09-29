@@ -212,17 +212,22 @@ python train_M.py --batch-size 30 --name MSMT_Efficient_ALL_2SDDense_b30_lr4_fli
 ## Evaluation
 - Market-1501
 ```bash 
-python test_M.py  --name  Efficient_ALL_SDense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000 
+python test_M.py  --name  Market_Efficient_ALL_2SDDense_b30_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance
 ```
 
 - DukeMTMC-reID
 ```bash 
-python test_M.py  --data 2DDuke --name   Efficient_Duke_ALL_SDense_b16_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000
+python test_M.py  --data 2DDuke --name Duke_Efficient_ALL_2SDDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance
+```
+
+- CUHK
+```bash 
+python test_M.py  --data 2DCUHK --name CUHK_Efficient_ALL_2SDDense_b36_lr6_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1500_id2_bn_k9_conv2_balance
 ```
 
 - MSMT-17
 ```bash 
-python test_MSMT.py  --name MSMT_Efficient_ALL_2SDDense_b32_lr3_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e1000_id2_bn_k9_conv2_balance
+python test_MSMT.py  --name MSMT_Efficient_ALL_2SDDense_b30_lr4_flip_slim0.5_warm10_scale_e0_d7+bg_adam_init768_clusterXYZRGB_e600_id2_bn_k9_conv2_balance
 ```
 
 ## Pre-trained Models
