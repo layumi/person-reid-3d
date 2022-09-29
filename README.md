@@ -65,7 +65,9 @@ conda install gcc_linux-64
 ## Prepare Data 
 - **3D Part** You may directly download my generated 3D data of the Market-1501 dataset at [[OneDrive]](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EQXEskhdd3xPjdFRxAUtB9cB7RkjAdzS5YXRH8QIf_TWAw?e=IhqNpi) or [[GoogleDrive]](https://drive.google.com/file/d/1ih-LrkdGUvNK3rEUNJIq4LTvcgVOXnnM/view?usp=sharing), and therefore you could skip the data preparation part.
  Or generate the 3D data via the code at https://github.com/layumi/hmr 
-(I modified the code from https://github.com/akanazawa/hmr and added 2D-to-3D color mapping.)
+(I modified the code from https://github.com/akanazawa/hmr and added 2D-to-3D color mapping.) 
+
+**I remove all 3D faces and only keep 3D points positions&RGB to save the storage & loading burden. You can use any text readers (such as vim) to see my generated obj files.**
 
 - **2D Part** Download Market-1501, DukeMTMC-reID or MSMT17 and unzip them in the `../`
 
