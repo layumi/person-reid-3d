@@ -5,7 +5,7 @@
 
 ![](https://github.com/layumi/person-reid-3d/blob/master/imgs/demo-1.jpg)
 
-Thanks for your attention. In this repo, we provide the code for the paper [[Parameter-Efficient Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569).
+Thanks for your attention. In this repo, we provide the code for the paper [[Parameter-Efficient Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569), published at IEEE Transactions on Neural Networks and Learning Systems (TNNLS) 2022.
 
 ## News
 - **29 Sep 2022.** I updated Circle loss, parameter count and the latest snapshots trained on 4 datasets, including Market, Duke, CUHK and MSMT, in `/snapshots`. You can directly test it after dataset preparing. 
@@ -248,7 +248,7 @@ You may cite it in your paper. Thanks a lot.
 ```bibtex
 @article{zheng2022person,
   title={Parameter-Efficient Person Re-identification in the 3D Space},
-  author={Zhedong Zheng, Xiaohan Wang, Nenggan Zheng, Yi Yang},
+  author={Zheng Zhedong and Wang, Xiaohan and Zheng, Nenggan and Yang, Yi},
   journal={IEEE Transactions on Neural Networks and Learning Systems (TNNLS)},
   year={2022}
 }
