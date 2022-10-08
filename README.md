@@ -246,11 +246,11 @@ Results on ModelNet are 93.3 Top1 Accuracy / 90.5 MeanClass Top1 Accuracy.
 ## Citation
 You may cite it in your paper. Thanks a lot.
 ```bibtex
-@article{zheng2020person,
+@article{zheng2022person,
   title={Parameter-Efficient Person Re-identification in the 3D Space},
-  author={Zhedong Zheng, Nenggan Zheng, Yi Yang},
-  journal={arXiv 2006.04569},
-  year={2020}
+  author={Zhedong Zheng, Xiaohan Wang, Nenggan Zheng, Yi Yang},
+  journal={IEEE Transactions on Neural Networks and Learning Systems (TNNLS)},
+  year={2022}
 }
 ```
 
