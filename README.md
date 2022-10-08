@@ -248,7 +248,7 @@ You may cite it in your paper. Thanks a lot.
 ```bibtex
 @article{zheng2022person,
   title={Parameter-Efficient Person Re-identification in the 3D Space},
-  author={Zheng Zhedong and Wang, Xiaohan and Zheng, Nenggan and Yang, Yi},
+  author={Zheng, Zhedong and Wang, Xiaohan and Zheng, Nenggan and Yang, Yi},
   journal={IEEE Transactions on Neural Networks and Learning Systems (TNNLS)},
   year={2022}
 }
