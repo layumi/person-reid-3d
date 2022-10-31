@@ -250,6 +250,7 @@ You may cite it in your paper. Thanks a lot.
   title={Parameter-Efficient Person Re-identification in the 3D Space},
   author={Zheng, Zhedong and Wang, Xiaohan and Zheng, Nenggan and Yang, Yi},
   journal={IEEE Transactions on Neural Networks and Learning Systems (TNNLS)},
+  doi={10.1109/TNNLS.2022.3214834},
   year={2022}
 }
 ```
