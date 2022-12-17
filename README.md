@@ -3,6 +3,8 @@
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
+[[Pdf]](https://zdzheng.xyz/files/TNNLS_3D_PersonReID.pdf) [[Code]](https://github.com/layumi/person-reid-3d) [[中文解读]](https://zhuanlan.zhihu.com/p/149121098) 
+
 ![](https://github.com/layumi/person-reid-3d/blob/master/imgs/demo-1.jpg)
 
 Thanks for your attention. In this repo, we provide the code for the paper [[Parameter-Efficient Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569), published at IEEE Transactions on Neural Networks and Learning Systems (TNNLS) 2022.
