@@ -11,7 +11,7 @@ Thanks for your attention. In this repo, we provide the code for the paper [[Par
 
 ## News
 
-**9 Mar 2023** Market-1501 is in 3D. Please check 2D to 3D reconstruction https://github.com/layumi/3D-Magic-Mirror.
+**9 Mar 2023** Market-1501 is in 3D. Please check our single 2D to 3D reconstruction work  https://github.com/layumi/3D-Magic-Mirror.
 ![](https://github.com/layumi/3D-Magic-Mirror/raw/master/doc/rainbow_github.gif)
 
 - **29 Sep 2022.** I updated Circle loss, parameter count and the latest snapshots trained on 4 datasets, including Market, Duke, CUHK and MSMT, in `/snapshots`. You can directly test it after dataset preparing. 
