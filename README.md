@@ -10,6 +10,10 @@
 Thanks for your attention. In this repo, we provide the code for the paper [[Parameter-Efficient Person Re-identification in the 3D Space ]](https://arxiv.org/abs/2006.04569), published at IEEE Transactions on Neural Networks and Learning Systems (TNNLS) 2022.
 
 ## News
+
+**9 Mar 2023** Market-1501 is in 3D. Please check 2D to 3D reconstruction https://github.com/layumi/3D-Magic-Mirror.
+![](https://github.com/layumi/3D-Magic-Mirror/raw/master/doc/rainbow_github.gif)
+
 - **29 Sep 2022.** I updated Circle loss, parameter count and the latest snapshots trained on 4 datasets, including Market, Duke, CUHK and MSMT, in `/snapshots`. You can directly test it after dataset preparing. 
 - **31 Jul 2021.** Circle loss is added. For the fair comparison with circle loss, I re-train almost all the models with a bigger batch size. The results are updated in the latest arXiv version.
  
