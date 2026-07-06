@@ -248,12 +248,23 @@ If the model is trained on CUHK, Duke or MSMT, I will add dataset name in the mo
 I add OG-Net code to https://github.com/layumi/dgcnn  
 Results on ModelNet are 93.3 Top1 Accuracy / 90.5 MeanClass Top1 Accuracy.
 
-## 🔗 Ecosystem
+## 🔗 Related Projects
 
 <p align="center"><i>Explore our ecosystem for Object Re-Identification 🔍</i></p>
 
 <div align="center">
   <table>
+    <tr>
+      <td align="center" colspan="3">
+        <a href="https://github.com/layumi/Person_reID_baseline_pytorch">
+          <h3>⛹️</h3>
+          <b>Person re-ID Baseline (PyTorch)</b>
+        </a>
+        <br><sub>A <b>Tiny, Friendly & Strong</b> PyTorch Baseline for Person / Vehicle Re-ID<br>with Hands-on Tutorial · The Community Standard since 2017</sub>
+        <br><br>
+        <a href="https://github.com/layumi/Person_reID_baseline_pytorch"><img src="https://img.shields.io/github/stars/layumi/Person_reID_baseline_pytorch.svg?style=social&label=Star" alt="GitHub stars"></a>
+      </td>
+    </tr>
     <tr>
       <td align="center" width="33%">
         <a href="https://github.com/layumi/3D-Magic-Mirror">
