@@ -248,20 +248,6 @@ If the model is trained on CUHK, Duke or MSMT, I will add dataset name in the mo
 I add OG-Net code to https://github.com/layumi/dgcnn  
 Results on ModelNet are 93.3 Top1 Accuracy / 90.5 MeanClass Top1 Accuracy.
 
-
-## Citation
-You may cite it in your paper. Thanks a lot.
-```bibtex
-@article{zheng2022person,
-  title={Parameter-Efficient Person Re-identification in the 3D Space},
-  author={Zheng, Zhedong and Wang, Xiaohan and Zheng, Nenggan and Yang, Yi},
-  journal={IEEE Transactions on Neural Networks and Learning Systems (TNNLS)},
-  doi={10.1109/TNNLS.2022.3214834},
-  note={\mbox{doi}:\url{10.1109/TNNLS.2022.3214834}},
-  year={2022}
-}
-```
-
 ## 🔗 Ecosystem
 
 <p align="center"><i>Explore our ecosystem for Object Re-Identification 🔍</i></p>
@@ -363,6 +349,20 @@ You may cite it in your paper. Thanks a lot.
 <p align="center">
   ⭐ If you find our projects helpful, a <b>star</b> is the best support! ⭐
 </p>
+
+## Citation
+You may cite it in your paper. Thanks a lot.
+```bibtex
+@article{zheng2022person,
+  title={Parameter-Efficient Person Re-identification in the 3D Space},
+  author={Zheng, Zhedong and Wang, Xiaohan and Zheng, Nenggan and Yang, Yi},
+  journal={IEEE Transactions on Neural Networks and Learning Systems (TNNLS)},
+  doi={10.1109/TNNLS.2022.3214834},
+  note={\mbox{doi}:\url{10.1109/TNNLS.2022.3214834}},
+  year={2022}
+}
+```
+
 
 ## Related Work
 We thank the great works of hmr, DGL, DGCNN and PointNet++. You may check their code at
